@@ -1,0 +1,387 @@
+{
+    "papers": [
+        {
+            "id": "mec-2023",
+            "title": "Short-term adaptation on tunable fitness landscapes from standing genetic variation in recombining populations",
+            "authors": [
+                {
+                    "name": "Li Juan"
+                },
+                {
+                    "name": "&nbsp<u>A Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "C Bank",
+                    "last": true
+                }
+            ],
+            "journal": "Molecular Ecology",
+            "year": 2023,
+            "doi": "10.1111/mec.16900",
+            "summary": "",
+            "figure": "",
+            "alt_figure": ""
+        },
+        {
+            "id": "rstb-2022",
+            "title": "Epistasis decreases with increasing antibiotic pressure but not temperature",
+            "authors": [
+                {
+                    "name": "AH Ghenu"
+                },
+                {
+                    "name": "&nbsp;<u>A Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "I Gordo"
+                },
+                {
+                    "name": "C Bank",
+                    "last": true
+                }
+            ],
+            "journal": "Philosophical Transactions of the Royal Society B",
+            "year": 2022,
+            "doi": "10.1098/rstb.2022.0058",
+            "summary": "",
+            "figure": "",
+            "alt_figure": ""
+        },
+        {
+            "id": "epjc-2020",
+            "title": "A&nbsp;<em>ϕ<sup>6</sup></em>&nbsp;soliton with a long-range tail",
+            "authors": [
+                {
+                    "name": "<u>A Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "A Mohammadi",
+                    "last": true
+                }
+            ],
+            "journal": "The European Physical Journal C",
+            "year": 2020,
+            "doi": "10.1140/epjc/s10052-020-8162-9",
+            "summary": "In this work, Azadeh and I explore a new <em>ϕ<sup>6</sup></em> soliton with a long-range tail. We find the solitonic solution and its oscillation modes. Then we study the interaction of this soliton with scalar fields (considering two possible couplings) and a fermion field. Excitingly, we were able to obtain most results analytically!",
+            "figure": "figs/epjc-2020.png",
+            "alt_figure": "equations"
+        },
+        {
+            "id": "evoeco-2019",
+            "title": "Ecological specialization under multidimensional trade-offs",
+            "authors": [
+                {
+                    "name": "<u>A Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "PRA Campos",
+                    "last": true
+                }
+            ],
+            "journal": "Evolutionary Ecology",
+            "year": 2019,
+            "doi": "10.1007/s10682-019-10013-4",
+            "summary": "Organisms are expected to face trade-offs when trying to extract the most energy of a resource as swiftly as possible. While this is well-known, the effects that it has at the community level are not very well explored. We suppose a system with several resources whose rates of acquisition and processing are subject to this type of restrictions. Then, we study the consequences it implies to the diversity and dynamics of the microbial communities that depend on those resources. To parametrize these complex trade-offs, we draw inspiration from computer graphics and make use of the flexible Bézier surfaces!",
+            "figure": "figs/evoeco-2019.png",
+            "alt_figure": ""
+        },
+        {
+            "id": "epjp-2019",
+            "title": "Interplay of sources of stochastic noise in a resource-based model",
+            "authors": [
+                {
+                    "name": "<u>A Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "JV Santana-Filho"
+                },
+                {
+                    "name": "PRA Campos"
+                },
+                {
+                    "name": "EP Raposo",
+                    "last": true
+                }
+            ],
+            "journal": "The European Physical Journal Plus",
+            "year": 2019,
+            "doi": "10.1140/epjp/i2019-12603-5",
+            "summary": "We study a stochastic model in which agents acquire resources from their environment. The resource influx and death rate are subject to random fluctuations. We derive equilibrium distributions analytically for a single species. Later, we generalize the model to include an arbitrary number of species and resources and study the coexistence of species in this setting.",
+            "figure": "figs/epjp-2019.png",
+            "alt_figure": ""
+        },
+        {
+            "id": "plrev-2018",
+            "title": "Agent-based models of collective intelligence",
+            "authors": [
+                {
+                    "name": "SM Reia"
+                },
+                {
+                    "name": "&nbsp;<u>A Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "JF Fontanari",
+                    "last": true
+                }
+            ],
+            "journal": "Physics of Life Reviews",
+            "year": 2019,
+            "doi": "10.1016/j.plrev.2018.10.004",
+            "summary": "",
+            "figure": "",
+            "alt_figure": ""
+        },
+        {
+            "id": "ecolmodel-2018",
+            "title": "The interplay of tradeoffs within the framework of a resource-based modelling",
+            "authors": [
+                {
+                    "name": "VM Oliveira"
+                },
+                {
+                    "name": "&nbsp;<u>A Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "PRA Campos",
+                    "last": true
+                }
+            ],
+            "journal": "Ecological Modelling",
+            "year": 2018,
+            "doi": "10.1016/j.ecolmodel.2018.06.026",
+            "summary": "",
+            "figure": "",
+            "alt_figure": ""
+        },
+        {
+            "id": "evo-2018",
+            "title": "A theoretical approach to the size‐complexity rule",
+            "authors": [
+                {
+                    "name": "<u>A Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "C Batista"
+                },
+                {
+                    "name": "PRA Campos",
+                    "last": true
+                }
+            ],
+            "journal": "Evolution",
+            "year": 2018,
+            "doi": "10.1111/evo.13392",
+            "summary": "",
+            "figure": "",
+            "alt_figure": ""
+        },
+        {
+            "id": "physa-2017",
+            "title": "A mechanistic model for the evolution of multicellularity",
+            "authors": [
+                {
+                    "name": "<u>A Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "C Batista"
+                },
+                {
+                    "name": "PRA Campos",
+                    "last": true
+                }
+            ],
+            "journal": "Physica A",
+            "year": 2017,
+            "doi": "10.1016/j.physa.2017.11.080",
+            "summary": "",
+            "figure": "",
+            "alt_figure": ""
+        },
+        {
+            "id": "plb-2017",
+            "title": "Quantum corrections to the generalized Proca theory via a matter field",
+            "authors": [
+                {
+                    "name": "<u>A Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "Z Haghani"
+                },
+                {
+                    "name": "A Mohammadi"
+                },
+                {
+                    "name": "S Shahidi",
+                    "last": true
+                }
+            ],
+            "journal": "Physics Letters B",
+            "year": 2017,
+            "doi": "10.1016/j.physletb.2017.06.040",
+            "summary": "",
+            "figure": "figs/plb-2017.png",
+            "alt_figure": ""
+        },
+        {
+            "id": "jstatmec-2017",
+            "title": "The influence of the composition of tradeoffs on the generation of differentiated cells",
+            "authors": [
+                {
+                    "name": "<u>A Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "PRA Campos",
+                    "last": true
+                }
+            ],
+            "journal": "Journal of Statistical Mechanics",
+            "year": 2017,
+            "doi": "10.1088/1742-5468/aa71d8",
+            "summary": "Trade-offs represent constraints that limit the capacity of organisms to optimize different traits simultaneously. Since trade-offs are widespread in nature, life has developed crafty ways to circumvent these restrictions. One of these ways is the division of labor, with different organisms, or different units within the same organism, performing distinct functions and then sharing the benefits of them all. This probably constitutes one of the leading forces behind the evolution of multicellularity and cell specialization. In most models, trade-offs are treated individually, though, while it is more realistic to consider them in complex networks of interacting functions. In this work, we propose a model where trade-offs are naturally incorporated in networks and study the consequences this has on the evolution of cell differentiation.",
+            "figure": "figs/jstatmec-2017.png",
+            "alt_figure": ""
+        },
+        {
+            "id": "epjc-2017",
+            "title": "Coupled fermion–kink system in Jackiw–Rebbi model",
+            "authors": [
+                {
+                    "name": "<u>A Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "A Mohammadi",
+                    "last": true
+                }
+            ],
+            "journal": "The European Physical Journal C",
+            "year": 2017,
+            "doi": "10.1140/epjc/s10052-017-5044-x",
+            "summary": "",
+            "figure": "figs/epjc-2017.png",
+            "alt_figure": ""
+        },
+        {
+            "id": "rsos-2016",
+            "title": "Competing metabolic strategies in a multilevel selection model",
+            "authors": [
+                {
+                    "name": "<u>A Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "L Fernández"
+                },
+                {
+                    "name": "W Huang"
+                },
+                {
+                    "name": "FF Ferreira"
+                },
+                {
+                    "name": "PRA Campos",
+                    "last": true
+                }
+            ],
+            "journal": "Royal Society Open Science",
+            "year": 2016,
+            "doi": "10.1098/rsos.160544",
+            "summary": "",
+            "figure": "figs/rsos-2016.jpg",
+            "alt_figure": ""
+        },
+        {
+            "id": "pre-2016",
+            "title": "Coexistence of competing metabolic pathways in well-mixed populations",
+            "authors": [
+                {
+                    "name": "L Fernández"
+                },
+                {
+                    "name": "&nbsp;<u>A Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "PRA Campos"
+                },
+                {
+                    "name": "FF Ferreira",
+                    "last": true
+                }
+            ],
+            "journal": "Physical Review E",
+            "year": 2016,
+            "doi": "10.1103/PhysRevE.93.052401",
+            "summary": "",
+            "figure": "figs/pre-2016.png",
+            "alt_figure": ""
+        },
+        {
+            "id": "physa-2015",
+            "title": "Learning process in public goods games",
+            "authors": [
+                {
+                    "name": "<u>A Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "W Huang"
+                },
+                {
+                    "name": "PRA Campos"
+                },
+                {
+                    "name": "FF Ferreira",
+                    "last": true
+                }
+            ],
+            "journal": "Physica A",
+            "year": 2015,
+            "doi": "10.1016/j.physa.2015.02.077",
+            "summary": "",
+            "figure": "figs/physa-2015.png",
+            "alt_figure": ""
+        }
+    ],
+    "postdocs": [
+        {
+            "institution": "University of Bern",
+            "institution_url": "https://www.unibe.ch/index_eng.html",
+            "lab": "Theoretical Ecology and Evolution",
+            "lab_url": "https://banklab.github.io/",
+            "supervisor": "Dr Claudia Bank",
+            "start": "02/2021",
+            "end": "03/2023"
+        },
+        {
+            "institution": "Instituto Gulbenkian de Ciência",
+            "institution_url": "https://gulbenkian.pt/ciencia/",
+            "lab": "Evolutionary Dynamics lab",
+            "lab_url": "https://evoldynamics.org/",
+            "supervisor": "Dr Claudia Bank",
+            "start": "05/2019",
+            "end": "01/2021"
+        },
+        {
+            "institution": "Universidade Federal de Pernambuco",
+            "institution_url": "https://www.ufpe.br/",
+            "lab": "Physics Department/Laboratório de Física Teórica e Computacional",
+            "lab_url": "https://www.ufpe.br/df",
+            "supervisor": "Dr Ernesto Raposo",
+            "start": "04/2018",
+            "end": "03/2019"
+        }
+    ]
+}

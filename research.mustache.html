@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>André Amado</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,900;1,200;1,300;1,600;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <p class="display-1">André Amado</p>
+        <a href="https://orcid.org/0000-0002-9027-5037" class="orcidid">
+            <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" width="16" height="16"
+                alt="ORCID logo">
+            https://orcid.org/0000-0002-9027-5037
+        </a>
+        <br>
+        <a href="https://scholar.google.com/citations?user=jO8AA9gAAAAJ">
+            google scholar
+        </a>
+
+        <br>
+
+
+        <p class="display-3">CV</p>
+
+        <p class="display-4">Work experience</p>
+        <p class="display-6">Postdoc</p>
+        <div class="container">
+            {{#postdocs}}
+            <div class="row text-start">
+                <div class="col-md-2"><em>Institution</em></div>
+                <div class="col-md-10"><a href="{{institution_url}}">{{institution}}</a></div>
+            </div>
+            <div class="row text-start">
+                <div class="col-md-2"><em>Lab</em></div>
+                <div class="col-md-10"><a href="{{lab_url}}">{{lab}}</a></div>
+            </div>
+            <div class="row text-start">
+                <div class="col-md-2"><em>Supervisor</em></div>
+                <div class="col-md-10">{{supervisor}}</div>
+            </div>
+            <div class="row text-start">
+                <div class="col-md-2"><em>Period</em></div>
+                <div class="col-md-10">{{start}} - {{end}}</div>
+            </div>
+            <br>
+            {{/postdocs}}
+        </div>
+
+        <br><br>
+
+        <p class="display-4">Peer-reviewed publications</p>
+        <div class="accordion cv-list" id="papers">
+            {{#papers}}
+            <!-- {{title}} ({{year}}) -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="{{id}}">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-{{id}}" aria-expanded="false" aria-controls="collapse-{{id}}">
+                        {{{title}}}
+                        ({{#authors}}{{{name}}}{{^last}}, {{/last}}{{/authors}})
+                    </button>
+                </h2>
+                <div id="collapse-{{id}}" class="accordion-collapse collapse" aria-labelledby="{{id}}"
+                    data-bs-parent="#papers">
+                    <div class="accordion-body">
+                        <div class="container text-start">
+                            <em>{{journal}}</em> ({{year}})<br>
+                            doi: <a href="https://doi.org/{{{doi}}}">{{doi}}</a><br><br>
+                            <div class="row text-start">
+                                <div class="col-md-8">{{{summary}}}</div>
+                                <div class="col-md-4">
+                                    <div class="publication-summary-img">
+                                        <img src="{{figure}}" alt="{{alt_figure}}" width="100%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/papers}}
+        </div>
+
+        <br><br>
+
+        <p class="display-4">Other publications</p>
+        <div class="accordion cv-list" id="papers">
+            {{#papers}}
+            <!-- {{title}} ({{year}}) -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="{{id}}">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse-{{id}}" aria-expanded="false" aria-controls="collapse-{{id}}">
+                        {{{title}}}
+                        ({{#authors}}{{{name}}}{{^last}}, {{/last}}{{/authors}})
+                    </button>
+                </h2>
+                <div id="collapse-{{id}}" class="accordion-collapse collapse" aria-labelledby="{{id}}"
+                    data-bs-parent="#papers">
+                    <div class="accordion-body">
+                        <div class="container text-start">
+                            <em>{{journal}}</em> ({{year}})<br>
+                            doi: <a href="https://doi.org/{{{doi}}}">{{doi}}</a><br><br>
+                            <div class="row text-start">
+                                <div class="col-md-8">{{{summary}}}</div>
+                                <div class="col-md-4">
+                                    <div class="publication-summary-img">
+                                        <img src="{{figure}}" alt="{{alt_figure}}" width="100%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/papers}}
+        </div>
+    </div>
+
+
+    <!-- <h2>CV</h2>
+    <h3>working experience</h3>
+    <div class="">
+        <div class="publication">
+            <div class="publication-header">
+                <div class="publication-title">
+                    Postdoc
+                </div>
+                <table width="100%">
+                    <tr>
+                        <td width="13%"><em>Institution</em></td>
+                        <td><a href="https://gulbenkian.pt/ciencia/">Instituto Gulbenkian de Ciência</a></td>
+                    </tr>
+                    <tr>
+                        <td width="13%"><em>Lab</em></td>
+                        <td><a href="https://evoldynamics.org/">Evolutionary Dynamics lab</a></td>
+                    </tr>
+                    <tr>
+                        <td width="13%"><em>Supervisor</em></td>
+                        <td>Dr. Claudia Bank</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="publication-summary">
+                <div class="publication-summary-text">
+                    <hr>
+                    blah blah blah!
+                </div>
+                <div class="publication-summary-img">
+                    <img src="figs/" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="publication-header">
+                <div class="publication-title">
+                    Postdoc
+                </div>
+                <table width="100%">
+                    <tr>
+                        <td width="13%"><em>Institution</em></td>
+                        <td><a href="https://tecnico.ulisboa.pt/en/">Instituto Superior Técnico</a></td>
+                    </tr>
+                    <tr>
+                        <td width="13%"><em>Lab</em></td>
+                        <td><a href="https://www.ufpe.br/df">Physics Department/Laboratório de Física Teórica e
+                                Computacional</a></td>
+                    </tr>
+                    <tr>
+                        <td width="13%"><em>Supervisor</em></td>
+                        <td>Prof. Ernesto Carneiro Pessoa Raposo</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="publication-summary">
+                <div class="publication-summary-text">
+                    <hr>
+                    blah blah blah!
+                </div>
+                <div class="publication-summary-img">
+                    <img src="figs/" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+
+        <h3>education</h3>
+        <div class="">
+            <div class="publication">
+                <div class="publication-header">
+                    <div class="publication-title">
+                        Ph.D. in Physics
+                    </div>
+                    <table width="100%">
+                        <tr>
+                            <td width="13%"><em>Institution</em></td>
+                            <td><a href="https://www.ufpe.br/">Universidade Federal de Pernambuco</a></td>
+                        </tr>
+                        <tr>
+                            <td width="13%"><em>Supervisor</em></td>
+                            <td>Prof. Paulo Roberto de Araujo Campos</td>
+                        </tr>
+                        <tr>
+                            <td width="13%"><em>Thesis</em></td>
+                            <td><a
+                                    href="https://repositorio.ufpe.br/bitstream/123456789/29704/1/TESE%20Andr%C3%A9%20da%20Concei%C3%A7%C3%A3o%20Amado.pdf">Fitness
+                                    tradeoffs in the evolutionary transition to multicellularity and the evolution of
+                                    complexity</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="publication-summary">
+                    <div class="publication-summary-text">
+                        <hr>
+                        blah blah blah!
+                    </div>
+                    <div class="publication-summary-img">
+                        <img src="figs/" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-header">
+                    <div class="publication-title">
+                        MSc. in Physical Engineering
+                    </div>
+                    <table width="100%">
+                        <tr>
+                            <td width="13%"><em>Institution</em></td>
+                            <td><a href="https://tecnico.ulisboa.pt/en/">Instituto Superior Técnico</a></td>
+                        </tr>
+                        <tr>
+                            <td width="13%"><em>Supervisor</em></td>
+                            <td>Prof. Pedro Jose de Almeida Bicudo</td>
+                        </tr>
+                        <tr>
+                            <td width="13%"><em>Thesis</em></td>
+                            <td><a href="https://fenix.tecnico.ulisboa.pt/downloadFile/395144787556/dissertacao.pdf">Flux
+                                    tubes in U(1) Lattice Gauge Theory</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="publication-summary">
+                    <div class="publication-summary-text">
+                        <hr>
+                        blah blah blah!
+                    </div>
+                    <div class="publication-summary-img">
+                        <img src="figs/" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+            </div> -->
+</body>
+
+</html>
