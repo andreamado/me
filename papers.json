@@ -2,7 +2,7 @@
     "papers": [
         {
             "id": "mec-2023",
-            "title": "Short-term adaptation on tunable fitness landscapes from standing genetic variation in recombining populations",
+            "title": "Rapid adaptation of recombining populations on tunable fitness landscapes",
             "authors": [
                 {
                     "name": "Li Juan"
@@ -20,7 +20,7 @@
             "year": 2023,
             "doi": "10.1111/mec.16900",
             "summary": "",
-            "figure": "",
+            "figure": "figs/mec-2023.png",
             "alt_figure": ""
         },
         {
@@ -46,7 +46,7 @@
             "year": 2022,
             "doi": "10.1098/rstb.2022.0058",
             "summary": "",
-            "figure": "",
+            "figure": "figs/rstb-2022.png",
             "alt_figure": ""
         },
         {
@@ -135,7 +135,7 @@
             "year": 2019,
             "doi": "10.1016/j.plrev.2018.10.004",
             "summary": "",
-            "figure": "",
+            "figure": "figs/plrev-2019.png",
             "alt_figure": ""
         },
         {
@@ -158,7 +158,7 @@
             "year": 2018,
             "doi": "10.1016/j.ecolmodel.2018.06.026",
             "summary": "",
-            "figure": "",
+            "figure": "figs/ecolmodel-2018.png",
             "alt_figure": ""
         },
         {
@@ -181,7 +181,7 @@
             "year": 2018,
             "doi": "10.1111/evo.13392",
             "summary": "",
-            "figure": "",
+            "figure": "figs/evo-2018.png",
             "alt_figure": ""
         },
         {
@@ -204,7 +204,7 @@
             "year": 2017,
             "doi": "10.1016/j.physa.2017.11.080",
             "summary": "",
-            "figure": "",
+            "figure": "figs/physa-2017.png",
             "alt_figure": ""
         },
         {
@@ -352,6 +352,129 @@
             "doi": "10.1016/j.physa.2015.02.077",
             "summary": "",
             "figure": "figs/physa-2015.png",
+            "alt_figure": ""
+        }
+    ],
+    "other-publications": [
+        {
+            "id": "ecological-tradeoffs-2023",
+            "title": "Ecological tradeoﬀs create complex dynamics and sustained diversity on dynamic eco-evolutionary ﬁtness landscapes (submitted)",
+            "authors": [
+                {
+                    "name": "<u>A Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "C Bank",
+                    "last": true
+                }
+            ],
+            "journal": "",
+            "year": 2023,
+            "doi": "",
+            "summary": "",
+            "figure": "",
+            "alt_figure": ""
+        },
+        {
+            "id": "stun-2023",
+            "title": "STUN: forward-time&nbsp;<strong>S</strong>imulation on&nbsp;<strong>TU</strong>nable fit<strong>N</strong>ess landscapes in recombining populations (submitted)",
+            "authors": [
+                {
+                    "name": "<u>A Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "Li Juan"
+                },
+                {
+                    "name": "C Bank",
+                    "last": true
+                }
+            ],
+            "journal": "",
+            "year": 2023,
+            "doi": "10.1101/2023.02.15.528681",
+            "summary": "",
+            "figure": "",
+            "alt_figure": ""
+        },
+        {
+            "id": "unpredict-2023",
+            "title": "Unpredictability of the fitness effects of AMR mutations across environments in Escherichia coli (in preparation)",
+            "authors": [
+                {
+                    "name": "A Hinz"
+                },
+                {
+                    "name": "&nbsp;<u>A Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "R Kassen"
+                },
+                {
+                    "name": "C Bank"
+                },
+                {
+                    "name": "A Wong",
+                    "last": true
+                }
+            ],
+            "journal": "",
+            "year": 2023,
+            "doi": "",
+            "summary": "",
+            "figure": "",
+            "alt_figure": ""
+        },
+        {
+            "id": "fluxtube-2013",
+            "title": "Flux tube widening in compact U(1) lattice gauge theory computed at T < Tc with the multilevel method and GPUs",
+            "authors": [
+                {
+                    "name": "<u>A Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "N Cardoso"
+                },
+                {
+                    "name": "P Bicudo",
+                    "last": true
+                }
+            ],
+            "journal": "",
+            "year": 2013,
+            "doi": "10.48550/arXiv.1309.3859",
+            "summary": "",
+            "figure": "figs/fluxtube-2013.png",
+            "alt_figure": ""
+        },
+        {
+            "id": "actaphysb-2012",
+            "title": "Study of compact U(1) flux tubes in 3+1 dimensions in lattice gauge theory using GPU's",
+            "authors": [
+                {
+                    "name": "<u>A Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "N Cardoso"
+                },
+                {
+                    "name": "M Cardoso"
+                },
+                {
+                    "name": "P Bicudo",
+                    "last": true
+                }
+            ],
+            "journal": "Acta Physica Polonica B",
+            "year": 2012,
+            "doi": "10.5506/APhysPolBSupp.5.1129",
+            "summary": "",
+            "figure": "figs/actaphysb-2012.png",
             "alt_figure": ""
         }
     ],
