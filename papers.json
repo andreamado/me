@@ -506,5 +506,22 @@
             "start": "04/2018",
             "end": "03/2019"
         }
+    ],
+    "contact_id": "21a685ec-36cf-4b0e-81c8-a75c7426ab62",
+    "main_skills": [
+        {"skill": "Python (NumPy, SciPy, pandas, Matplotlib, sklearn)"},
+        {"skill": "Rust"},
+        {"skill": "C++"},
+        {"skill": "data analysis"},
+        {"skill": "model development"},
+        {"skill": "software development"},
+        {"skill": "statistics"},
+        {"skill": "mathematics"},
+        {"skill": "physics"},
+        {"skill": "working on an international and collaborative environment"},
+        {"skill": "scientific communication and writing"},
+        {"skill": "MacOS"},
+        {"skill": "Linux"},
+        {"skill": "Windows"}
     ]
 }

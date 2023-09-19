@@ -40,27 +40,84 @@
         </div>
     </nav> -->
 
-    <div class="container mb-4">
+    <!-- <div class="container mb-4">
         <div class="row mt-4">
             <div class="jumbotron border rounded-3">
-                <div class="container">
+                <div class="container mt-4">
                     <h1 class="display-4">André Amado</h1>
                     <p class="lead">Multidisciplinary scientist</p>
+                    <hr class="my-4">
+                    <p class="lead mb-4">
+                        <a href="https://orcid.org/0000-0002-9027-5037" class="orcidid">
+                            <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" width="16" height="16"
+                                alt="ORCID logo">
+                            https://orcid.org/0000-0002-9027-5037
+                        </a>
+                    </p>
+                    <!-- <p class="lead">
+                        <a href="https://scholar.google.com/citations?user=jO8AA9gAAAAJ">
+                            google scholar
+                        </a>
+                    </p> -->
+                    <p>sdfasdf</p>
                 </div>
             </div>
         </div>
-        <p class="display-1">André Amado</p>
-        <a href="https://orcid.org/0000-0002-9027-5037" class="orcidid">
-            <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" width="16" height="16"
-                alt="ORCID logo">
-            https://orcid.org/0000-0002-9027-5037
-        </a>
-        <br>
-        <a href="https://scholar.google.com/citations?user=jO8AA9gAAAAJ">
-            google scholar
-        </a>
+        <br> -->
 
-        <br>
+        <!-- <a href="https://scholar.google.com/citations?user=jO8AA9gAAAAJ">
+            google scholar
+        </a> -->
+        <div class="row mt-4">
+            <div class="col-sm-6">
+                <div class="jumbotron border rounded-3 bg-light">
+                    <div class="container m-4">
+                        <h1 class="display-4">André Amado</h1>
+                        <p class="lead mb-0">Multidisciplinary scientist</p>
+                        <p class="lead mb-0">
+                            <a href="https://www.linkedin.com/in/andr%C3%A9-amado/" class="orcidid">
+                                <img src="figs/In-Blue-Logo.png" width="16" height="16"
+                                    alt="ORCID logo">
+                                linkedin.com/in/andré-amado/
+                            </a>
+                        </p>
+                        <p class="lead">
+                            <a href="https://orcid.org/0000-0002-9027-5037" class="orcidid">
+                                <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" width="16" height="16"
+                                    alt="ORCID logo">
+                                https://orcid.org/0000-0002-9027-5037
+                            </a>
+                        </p>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="jumbotron border rounded-3 bg-light bg-gradient">
+                    <p class="m-4">
+                        I am a multidisciplinary scientist and developer. I have a background in Physics 
+                        (<a href="https://fisica.tecnico.ulisboa.pt/">M.Sc. Engineering Physics, Técnico</a>; 
+                        <a href="https://ufpe.br/df/">Ph.D. Physics, UFPE</a>). After the Ph.D. I pursued an academic
+                        career with three postdocs (<a href="https://ufpe.br/df/">UFPE</a>;
+                        <a href="https://gulbenkian.pt/ciencia/">Gulbenkian Science</a>; 
+                        <a href="https://banklab.github.io/">University of Bern</a>). My research career started in physics, 
+                        and I have since worked on different subjects, with a focus on biological problems.
+                    </p> 
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="row mt-4">
+            <div class="col">
+                <div class="jumbotron border rounded-3 bg-light">
+                    <p class="m-2" style="line-height: 2.5;"><strong>Main skills:</strong>
+                        {{#main_skills}}
+                            <span class="border border-dark rounded-2 my-2 p-1">{{skill}}</span>
+                        {{/main_skills}}
+                    </p>
+                </div>    
+            </div>
+        </div>
+
 
         <!-- <p class="display-3">CV</p> -->
 
@@ -76,10 +133,10 @@
                 <div class="col-md-2"><em>Lab</em></div>
                 <div class="col-md-10"><a href="{{lab_url}}">{{lab}}</a></div>
             </div>
-            {!<div class="row text-start">
+            <!-- <div class="row text-start">
                 <div class="col-md-2"><em>Supervisor</em></div>
                 <div class="col-md-10">{{supervisor}}</div>
-            </div>} 
+            </div> -->
             <div class="row text-start">
                 <div class="col-md-2"><em>Period</em></div>
                 <div class="col-md-10">{{start}} - {{end}}</div>
@@ -156,6 +213,50 @@
                 </div>
             </div>
             {{/other-publications}}
+        </div>
+
+        <br><br>
+
+        <div class="col-sm-6">
+            <div class="jumbotron border rounded-3">
+                <p class="display-4 m-4">Contact me!</p>
+                <div class="m-4" id="contact">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="{{contact_id}}">
+                        
+        
+                        <div class="form-group row">
+                            <div class="col-sm-2">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col-sm-10 mb-3">
+                                <input type="text" name="name" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col-sm-10 mb-3">
+                                <input type="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2">
+                                <label for="message">Message</label>
+                            </div>
+                            <div class="col-sm-10 mb-3">
+                                <textarea name="message" rows="4" required></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="h-captcha" data-captcha="true"></div>
+                        <button type="submit">Submit</button>
+                    </form>
+                    
+                    <script src="https://web3forms.com/client/script.js" async defer></script>    
+                </div>    
+            </div>    
         </div>
     </div>
 
