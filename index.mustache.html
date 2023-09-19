@@ -23,51 +23,7 @@
 </head>
 
 <body>
-    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">André Amado</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Pricing</a>
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </div>
-            </div>
-        </div>
-    </nav> -->
-
-    <!-- <div class="container mb-4">
-        <div class="row mt-4">
-            <div class="jumbotron border rounded-3">
-                <div class="container mt-4">
-                    <h1 class="display-4">André Amado</h1>
-                    <p class="lead">Multidisciplinary scientist</p>
-                    <hr class="my-4">
-                    <p class="lead mb-4">
-                        <a href="https://orcid.org/0000-0002-9027-5037" class="orcidid">
-                            <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" width="16" height="16"
-                                alt="ORCID logo">
-                            https://orcid.org/0000-0002-9027-5037
-                        </a>
-                    </p>
-                    <!-- <p class="lead">
-                        <a href="https://scholar.google.com/citations?user=jO8AA9gAAAAJ">
-                            google scholar
-                        </a>
-                    </p> -->
-                    <p>sdfasdf</p>
-                </div>
-            </div>
-        </div>
-        <br> -->
-
-        <!-- <a href="https://scholar.google.com/citations?user=jO8AA9gAAAAJ">
-            google scholar
-        </a> -->
+    <div class="container mb-4">
         <div class="row mt-4">
             <div class="col-sm-6">
                 <div class="jumbotron border rounded-3 bg-light">
@@ -118,9 +74,6 @@
             </div>
         </div>
 
-
-        <!-- <p class="display-3">CV</p> -->
-
         <p class="display-4">Work experience</p>
         <p class="display-6">Postdoc</p>
         <div class="container">
@@ -133,10 +86,6 @@
                 <div class="col-md-2"><em>Lab</em></div>
                 <div class="col-md-10"><a href="{{lab_url}}">{{lab}}</a></div>
             </div>
-            <!-- <div class="row text-start">
-                <div class="col-md-2"><em>Supervisor</em></div>
-                <div class="col-md-10">{{supervisor}}</div>
-            </div> -->
             <div class="row text-start">
                 <div class="col-md-2"><em>Period</em></div>
                 <div class="col-md-10">{{start}} - {{end}}</div>
@@ -150,7 +99,6 @@
         <p class="display-4">Peer-reviewed publications</p>
         <div class="accordion cv-list" id="papers">
             {{#papers}}
-            <!-- {{title}} ({{year}}) -->
             <div class="accordion-item">
                 <h2 class="accordion-header" id="{{id}}">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -185,7 +133,6 @@
         <p class="display-4">Other publications</p>
         <div class="accordion cv-list" id="otherpublications">
             {{#other-publications}}
-            <!-- {{title}} ({{year}}) -->
             <div class="accordion-item">
                 <h2 class="accordion-header" id="{{id}}">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -224,7 +171,6 @@
                     <form action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="{{contact_id}}">
                         
-        
                         <div class="form-group row">
                             <div class="col-sm-2">
                                 <label for="name">Name</label>
@@ -251,150 +197,14 @@
                         </div>
                         
                         <div class="h-captcha" data-captcha="true"></div>
-                        <button type="submit">Submit</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                     
-                    <script src="https://web3forms.com/client/script.js" async defer></script>    
+                    <script src="https://web3forms.com/client/script.js" async defer></script>
                 </div>    
             </div>    
         </div>
     </div>
 
-
-    <!-- <h2>CV</h2>
-    <h3>working experience</h3>
-    <div class="">
-        <div class="publication">
-            <div class="publication-header">
-                <div class="publication-title">
-                    Postdoc
-                </div>
-                <table width="100%">
-                    <tr>
-                        <td width="13%"><em>Institution</em></td>
-                        <td><a href="https://gulbenkian.pt/ciencia/">Instituto Gulbenkian de Ciência</a></td>
-                    </tr>
-                    <tr>
-                        <td width="13%"><em>Lab</em></td>
-                        <td><a href="https://evoldynamics.org/">Evolutionary Dynamics lab</a></td>
-                    </tr>
-                    <tr>
-                        <td width="13%"><em>Supervisor</em></td>
-                        <td>Dr. Claudia Bank</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="publication-summary">
-                <div class="publication-summary-text">
-                    <hr>
-                    blah blah blah!
-                </div>
-                <div class="publication-summary-img">
-                    <img src="figs/" alt="" width="100%">
-                </div>
-            </div>
-        </div>
-
-        <div class="publication">
-            <div class="publication-header">
-                <div class="publication-title">
-                    Postdoc
-                </div>
-                <table width="100%">
-                    <tr>
-                        <td width="13%"><em>Institution</em></td>
-                        <td><a href="https://tecnico.ulisboa.pt/en/">Instituto Superior Técnico</a></td>
-                    </tr>
-                    <tr>
-                        <td width="13%"><em>Lab</em></td>
-                        <td><a href="https://www.ufpe.br/df">Physics Department/Laboratório de Física Teórica e
-                                Computacional</a></td>
-                    </tr>
-                    <tr>
-                        <td width="13%"><em>Supervisor</em></td>
-                        <td>Prof. Ernesto Carneiro Pessoa Raposo</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="publication-summary">
-                <div class="publication-summary-text">
-                    <hr>
-                    blah blah blah!
-                </div>
-                <div class="publication-summary-img">
-                    <img src="figs/" alt="" width="100%">
-                </div>
-            </div>
-        </div>
-
-        <h3>education</h3>
-        <div class="">
-            <div class="publication">
-                <div class="publication-header">
-                    <div class="publication-title">
-                        Ph.D. in Physics
-                    </div>
-                    <table width="100%">
-                        <tr>
-                            <td width="13%"><em>Institution</em></td>
-                            <td><a href="https://www.ufpe.br/">Universidade Federal de Pernambuco</a></td>
-                        </tr>
-                        <tr>
-                            <td width="13%"><em>Supervisor</em></td>
-                            <td>Prof. Paulo Roberto de Araujo Campos</td>
-                        </tr>
-                        <tr>
-                            <td width="13%"><em>Thesis</em></td>
-                            <td><a
-                                    href="https://repositorio.ufpe.br/bitstream/123456789/29704/1/TESE%20Andr%C3%A9%20da%20Concei%C3%A7%C3%A3o%20Amado.pdf">Fitness
-                                    tradeoffs in the evolutionary transition to multicellularity and the evolution of
-                                    complexity</a></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="publication-summary">
-                    <div class="publication-summary-text">
-                        <hr>
-                        blah blah blah!
-                    </div>
-                    <div class="publication-summary-img">
-                        <img src="figs/" alt="" width="100%">
-                    </div>
-                </div>
-            </div>
-
-            <div class="publication">
-                <div class="publication-header">
-                    <div class="publication-title">
-                        MSc. in Physical Engineering
-                    </div>
-                    <table width="100%">
-                        <tr>
-                            <td width="13%"><em>Institution</em></td>
-                            <td><a href="https://tecnico.ulisboa.pt/en/">Instituto Superior Técnico</a></td>
-                        </tr>
-                        <tr>
-                            <td width="13%"><em>Supervisor</em></td>
-                            <td>Prof. Pedro Jose de Almeida Bicudo</td>
-                        </tr>
-                        <tr>
-                            <td width="13%"><em>Thesis</em></td>
-                            <td><a href="https://fenix.tecnico.ulisboa.pt/downloadFile/395144787556/dissertacao.pdf">Flux
-                                    tubes in U(1) Lattice Gauge Theory</a></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="publication-summary">
-                    <div class="publication-summary-text">
-                        <hr>
-                        blah blah blah!
-                    </div>
-                    <div class="publication-summary-img">
-                        <img src="figs/" alt="" width="100%">
-                    </div>
-                </div>
-            </div>
-            </div> -->
 </body>
-
 </html>
