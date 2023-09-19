@@ -478,7 +478,49 @@
             "alt_figure": ""
         }
     ],
-    "postdocs": [],
+    "education": [
+        {
+            "institution": "Universidade Federal de Pernambuco",
+            "institution_url": "https://www.ufpe.br/",
+            "degree": "Ph.D. in Physics",
+            "year": 2018,
+            "thesis_link": "https://repositorio.ufpe.br/handle/123456789/29704",
+            "skills": [
+                {"skill": "mathematics"},
+                {"skill": "statistics"},
+                {"skill": "physics"},
+                {"skill": "evolution theory"},
+                {"skill": "model development"},
+                {"skill": "software development"},
+                {"skill": "Python"},
+                {"skill": "C++"},
+                {"skill": "LaTeX"},
+                {"skill": "Wolfram Mathematica"},
+                {"skill": "scientific writing"},
+                {"skill": "collaboration skills"},
+                {"skill": "Linux"}
+            ]
+        },
+        {
+            "institution": "Instituto Superior Técnico",
+            "institution_url": "https://tecnico.ulisboa.pt/en/",
+            "degree": "M.Sc. in Engineering Physics",
+            "year": 2012,
+            "thesis_link": "https://fenix.tecnico.ulisboa.pt/cursos/meft/dissertacao/2353642410246",
+            "skills": [
+                {"skill": "mathematics"},
+                {"skill": "statistics"},
+                {"skill": "physics"},
+                {"skill": "software development"},
+                {"skill": "C++"},
+                {"skill": "LaTeX"},
+                {"skill": "Wolfram Mathematica"},
+                {"skill": "scientific writing"},
+                {"skill": "collaboration skills"},
+                {"skill": "Linux"}
+            ]
+        }
+    ],
     "jobs": [
         {
             "institution": "University of Bern",

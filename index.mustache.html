@@ -95,7 +95,7 @@
         <p class="display-4">Professional experience</p>
         <div class="container">
             {{#jobs}}
-            <div class="row text-start">
+            <div class="row">
                 <div class="col-md-6 lead">
                     <a href="{{institution_url}}">{{institution}}</a>
                     {{#lab}}
@@ -104,7 +104,7 @@
                 </div>
                 <div class="col-md-2 lead text-end">{{start}} - {{end}}</div>
             </div>
-            <div class="row text-start mb-4">
+            <div class="row mb-4">
                 <div class="col-md-8">
                     <span class="lead">{{position}}</span>
                     <p class="mb-1">{{{description}}}</p>
@@ -121,7 +121,28 @@
             {{/jobs}}    
         </div>
 
-
+        <p class="display-4">Education</p>
+        <div class="container">
+            {{#education}}
+            <div class="row">
+                <div class="col-md-6 lead">
+                    <a href="{{institution_url}}">{{institution}}</a>
+                </div>
+                <div class="col-md-2 lead text-end">{{year}}</div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-8">
+                    <span class="lead ">{{degree}}</span> <small><a href="{{thesis_link}}">(thesis)</a></small>
+                    <p style="line-height: 2.2; overflow: hidden; text-overflow: ellipsis;">
+                        <span class="lead">Main skills </span>
+                        {{#skills}}
+                        <span class="border border-dark rounded-2 my-2 p-1" style="white-space:nowrap;">{{skill}}</span>
+                        {{/skills}}
+                    </p>    
+                </div>
+            </div>
+            {{/education}}
+        </div>
 
         <p class="display-4">Peer-reviewed publications</p>
         <div class="accordion cv-list" id="papers">
