@@ -24,8 +24,8 @@
 
 <body>
     <div class="container mb-4">
-        <div class="row mt-4">
-            <div class="col-sm-6">
+        <div class="row my-4">
+            <div class="col-lg-4 gy-2">
                 <div class="jumbotron border rounded-3 bg-light">
                     <div class="container m-4">
                         <h1 class="display-4">André Amado</h1>
@@ -47,24 +47,55 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <div class="jumbotron border rounded-3 bg-light bg-gradient">
-                    <p class="m-4">
-                        I am a multidisciplinary scientist and developer. I have a background in Physics 
+            <div class="col-lg-8 gy-2">
+                <div class="jumbotron border rounded-3 bg-light p-4" style="height: 100%;">
+                    <p class="text-justify">
+                        I am a multidisciplinary scientist and developer. 
+                        I have a <a href="https://fenix.tecnico.ulisboa.pt/cursos/meft">M.Sc. in Engineering Physics</a> 
+                        (<a href="https://tecnico.ulisboa.pt/en/">Técnico, Portugal</a>) and a 
+                        <a href="https://www.ufpe.br/ppgfisica">Ph.D. in Physics</a> 
+                        (<a href="https://www.ufpe.br/">UFPE, Brazil</a>). After the Ph.D., I 
+                        completed three postdocs(<a href="https://ufpe.br/df/">UFPE</a>;
+                        <a href="https://gulbenkian.pt/ciencia/">Gulbenkian Science</a>; 
+                        <a href="https://banklab.github.io/">University of Bern</a>). My research career 
+                        started in physics, and I have since worked 
+                        on different subjects, with a focus on biological problems.
+                    </p>
+                    <p class="text-justify">
+                        My background in physics and research experience gives me the flexibility 
+                        to learn and approach different problems. It also provides me with a solid mathematical 
+                        and statistics background. Science and academics allowed me to work in a collaborative and 
+                        international environment and develop my scientific writing and communication skills. 
+                        From a technical side, my career has had a robust modeling and simulation component, 
+                        reinforcing my development skills and ability to write efficient code. I have programmed 
+                        in various languages, particularly Python, Rust, and C++. I have frequently used Python 
+                        data analysis and visualization libraries, such as NumPy, SciPy, pandas, Matplotlib, and sklearn.
+                    </p>
+                    <p class="text-justify">
+                        Besides modeling, I analyzed experimental biological data, especially microbial fitness data, 
+                        during my last two postdocs. These experimental data were sourced from collaborators or data 
+                        available from different groups. My function was to characterize various statistics from those 
+                        data and extract as much information as possible with the ultimate goal of predicting microbial 
+                        fitness in different environments or situations. I worked especially with predicting antibiotic 
+                        resistance in different environments. To achieve this, I applied a combination of approaches, 
+                        especially examining correlations within the data or fitting biological models to generalize the 
+                        information contained in the data to more unrestricted situations.
+                    </p>
+                        <!-- I am a multidisciplinary scientist and developer. I have a background in Physics 
                         (<a href="https://fisica.tecnico.ulisboa.pt/">M.Sc. Engineering Physics, Técnico</a>; 
-                        <a href="https://ufpe.br/df/">Ph.D. Physics, UFPE</a>). After the Ph.D. I pursued an academic
+                        <a href="https://ufpe.br/df/">Ph.D. Physics, UFPE</a>). After the Ph.D., I pursued an academic
                         career with three postdocs (<a href="https://ufpe.br/df/">UFPE</a>;
                         <a href="https://gulbenkian.pt/ciencia/">Gulbenkian Science</a>; 
                         <a href="https://banklab.github.io/">University of Bern</a>). My research career started in physics, 
                         and I have since worked on different subjects, with a focus on biological problems.
-                    </p> 
+                    </p>  -->
                 </div>
             </div>
             <br>
         </div>
         <div class="row mt-4">
             <div class="col">
-                <div class="jumbotron border rounded-3 bg-light">
+                <div class="jumbotron border rounded-3 bg-light" style="height: 100%;">
                     <p class="m-2" style="line-height: 2.5;"><strong>Main skills:</strong>
                         {{#main_skills}}
                             <span class="border border-dark rounded-2 my-2 p-1">{{skill}}</span>
@@ -73,6 +104,8 @@
                 </div>    
             </div>
         </div>
+
+        <br><br>
 
         <p class="display-4">Work experience</p>
         <p class="display-6">Postdoc</p>
@@ -171,32 +204,31 @@
                     <form action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="{{contact_id}}">
                         
-                        <div class="form-group row">
+                        <div class="form-group row mb-3">
                             <div class="col-sm-2">
                                 <label for="name">Name</label>
                             </div>
-                            <div class="col-sm-10 mb-3">
-                                <input type="text" name="name" required>
+                            <div class="col-sm-10">
+                                <input type="text" name="name" style="width: 100%;" required>
                             </div>
                         </div>
-                        <div class="form-group row">
+                        <div class="form-group row mb-3">
                             <div class="col-sm-2">
                                 <label for="email">Email</label>
                             </div>
-                            <div class="col-sm-10 mb-3">
-                                <input type="email" name="email" required>
+                            <div class="col-sm-10">
+                                <input type="email" name="email" style="width: 100%;" required>
                             </div>
                         </div>
-                        <div class="form-group row">
+                        <div class="form-group row mb-3">
                             <div class="col-sm-2">
                                 <label for="message">Message</label>
                             </div>
-                            <div class="col-sm-10 mb-3">
-                                <textarea name="message" rows="4" required></textarea>
+                            <div class="col-sm-10">
+                                <textarea name="message" rows="4" style="width: 100%;" required></textarea>
                             </div>
                         </div>
                         
-                        <div class="h-captcha" data-captcha="true"></div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                     
