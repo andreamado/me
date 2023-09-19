@@ -1,3 +1,3 @@
 from os import system
 
-system('mustache papers.json index.mustache.html > index.html')
+system('mustache data.json index.mustache.html > index.html')
