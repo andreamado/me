@@ -283,6 +283,26 @@
 
         <br><br>
 
+        <p class="display-4">Online courses <small>({{online-courses.length}})</small></p>
+        <div class="container">
+            {{#online-courses}}
+            <div class="row mb-4">
+                <div class="col-md-5 lead">
+                    {{#link}}
+                    <p class="lead mb-0"><a href="{{link}}">{{name}}</a></p>
+                    {{/link}}
+                    {{^link}}
+                    <p class="lead mb-0">{{name}}</p>
+                    {{/link}}
+                    <p class="lead mb-0">{{website}}</p>
+                </div>
+                <div class="col-md-3 lead text-end">{{year}}</div>
+            </div>
+            {{/online-courses}}
+        </div>
+
+        <br><br>
+
         <div class="row mx-0 px-0">
             <div class="col-sm-6 mx-0 px-0">
                 <p class="display-4 my-4">Contact me!</p>

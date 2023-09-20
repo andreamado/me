@@ -789,5 +789,27 @@
             "location": "The Abdus Salam International Centre for Theoretical Physics (ICTP), Italy",
             "year": 2011
         }
+    ],
+    "online-courses": [
+        {
+            "name": "Django 4 and Python Full-Stack Developer Masterclass",
+            "year": 2023,
+            "website": "Udemy"
+        },
+        {
+            "name": "Research Integrity: Concise (core course)",
+            "year": 2020,
+            "website": "Epigeum Online Course System, Oxford University Press"
+        },
+        {
+            "name": "Programming Languages",
+            "year": 2013,
+            "website": "Coursera"
+        },
+        {
+            "name": "Heterogeneous Parallel Programming",
+            "year": 2013,
+            "website": "Coursera"
+        }
     ]
 }
