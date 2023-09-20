@@ -211,6 +211,20 @@
 
         <br><br>
 
+        <p class="display-4">Conference participations and seminars</p>
+        <div class="container">
+            {{#conferences}}
+            <div class="row">
+                <div class="col-md-6 lead">
+                    <p class="lead mb-0">{{name}}</p>
+                    {{#location}}<p  class="mb-0">{{location}}</p>{{/location}}
+                    <p><b>{{title}}</b></p>
+                </div>
+                <div class="col-md-2 lead text-end">{{year}}</div>
+            </div>
+            {{/conferences}}
+        </div>
+
         <div class="row mx-0 px-0">
             <div class="col-sm-6 mx-0 px-0">
                 <p class="display-4 my-4">Contact me!</p>

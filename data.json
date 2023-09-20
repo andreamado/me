@@ -639,5 +639,61 @@
         {"skill": "MacOS"},
         {"skill": "Linux"},
         {"skill": "Windows"}
+    ],
+    "conferences": [
+        {
+            "name": "Congress of the European Society for Evolutionary Biology",
+            "title": "Talk: Dynamic eco-evolutionary fitness landscapes display complex trajectories and sustained diversity",
+            "location": "Prague, Czech Republic",
+            "year": 2022
+        },
+        {
+            "name": "Unibe Data Science",
+            "title": "Poster: Dynamic eco-evolutionary fitness landscapes display complex evolutionary trajectories and sustained diversity",
+            "location": "Bern, Switzerland",
+            "year": 2022
+        },
+        {
+            "name": "Young Scientists Retreat 2019",
+            "title": "Poster: Modeling fitness landscapes across environments",
+            "location": "Gulbenkian Science and Institut Curie, Portugal",
+            "year": 2019
+        },
+        {
+            "name": "Postdoc Seminar",
+            "title": "Talk: Fitness costs of antimicrobial resistance in E. coli",
+            "location": "Gulbenkian Science, Portugal",
+            "year": 2019
+        },
+        {
+            "name": "From Molecular Basis to Predictability and Control of Evolution",
+            "title": "Participation",
+            "location": "Nordita, Stockholm, Sweden",
+            "year": 2019
+        },
+        {
+            "name": "IX Brazilian Meeting on Simulational Physics",
+            "title": "Poster: Evolution of multicellularity: a mechanistic model",
+            "location": "International Institute of Physics, Natal, Brazil",
+            "year": 2019
+        },
+        {
+            "name": "Encontro de Física 2016",
+            "title": "Poster: Tradeoffs and the evolution of complexity",
+            "location": "Sociedade Brasileira de Física, Natal, Brazil",
+            "year": 2016
+        },
+        {
+            "name": "Models in Population Dynamics and Ecology 15",
+            "title": "Poster: Predictability in populations evolving under imitation",
+            "location": "Universidade Federal Fluminense, Nitéroi, Brazil",
+            "year": 2015
+        },
+        {
+            "name": "Excited QCD",
+            "title": "Talk: Study of compact U(1) flux tubes in 3+1 dimensions in lattice gauge theory using GPU's",
+            "location": "Peniche, Portugal",
+            "year": 2012
+        }
     ]
 }
