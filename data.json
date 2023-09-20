@@ -701,5 +701,19 @@
             "location": "Peniche, Portugal",
             "year": 2012
         }
+    ],
+    "supervisions": [
+        {
+            "title": "The combination of a Rough Mt. Fuji fitness landscape and a consumer resource model leads to more coexisting genotypes than resources available (Msc project and thesis)",
+            "student": "Jérôme Stäheli (supervisor: Claudia Bank, co-supervisor: <u>André Amado</u>)",
+            "location": "University of Bern, Switzerland",
+            "year": 2023
+        },
+        {
+            "title": "Avaliação da qualidade de um modelo de fitness landscapes em múltiplos ambientes (BSc project and thesis)",
+            "student": "Inês Borges (supervisor: <u>André Amado</u>, co-supervisor: Claudia Bank)",
+            "location": "Universidade Nova de Lisboa, Portugal",
+            "year": 2020
+        }
     ]
 }
