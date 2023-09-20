@@ -649,7 +649,8 @@
             "year": 2022
         },
         {
-            "name": "Unibe Data Science",
+            "name": "Bern Data Science Day",
+            "link": "https://www.dsl.unibe.ch/lab/bdsd/bdsd2022/",
             "title": "Poster: Dynamic eco-evolutionary fitness landscapes display complex evolutionary trajectories and sustained diversity",
             "location": "Bern, Switzerland",
             "year": 2022
@@ -662,6 +663,7 @@
         },
         {
             "name": "Young Scientists Retreat 2019",
+            "link": "https://curie.fr/sites/default/files/medias/documents/2019-05/YSRFlyer2019_KMS_v2.pdf",
             "title": "Poster: Modeling fitness landscapes across environments",
             "location": "Gulbenkian Science and Institut Curie, Portugal",
             "year": 2019
@@ -674,18 +676,21 @@
         },
         {
             "name": "From Molecular Basis to Predictability and Control of Evolution",
+            "link": "https://indico.fysik.su.se/event/6552/",
             "title": "Participation",
             "location": "Nordita, Stockholm, Sweden",
             "year": 2019
         },
         {
             "name": "IX Brazilian Meeting on Simulational Physics",
+            "link": "https://www.iip.ufrn.br/eventsdetail.php?inf===QTUVUe",
             "title": "Poster: Evolution of multicellularity: a mechanistic model",
             "location": "International Institute of Physics, Natal, Brazil",
             "year": 2019
         },
         {
             "name": "Encontro de Física 2016",
+            "link": "http://sbfisica.org.br/~fisica2016/",
             "title": "Poster: Tradeoffs and the evolution of complexity",
             "location": "Sociedade Brasileira de Física, Natal, Brazil",
             "year": 2016
@@ -698,6 +703,7 @@
         },
         {
             "name": "Excited QCD",
+            "link": "https://indico.cern.ch/event/153191/",
             "title": "Talk: Study of compact U(1) flux tubes in 3+1 dimensions in lattice gauge theory using GPU's",
             "location": "Peniche, Portugal",
             "year": 2012
