@@ -643,6 +643,7 @@
     "conferences": [
         {
             "name": "Congress of the European Society for Evolutionary Biology",
+            "link": "https://www.eseb2022.cz/",
             "title": "Talk: Dynamic eco-evolutionary fitness landscapes display complex trajectories and sustained diversity",
             "location": "Prague, Czech Republic",
             "year": 2022
@@ -714,6 +715,73 @@
             "student": "Inês Borges (supervisor: <u>André Amado</u>, co-supervisor: Claudia Bank)",
             "location": "Universidade Nova de Lisboa, Portugal",
             "year": 2020
+        }
+    ],
+    "peer-review": [
+        {
+            "journal": "Evolution",
+            "publisher": "Oxford University Press",
+            "number": 1
+        },
+        {
+            "journal": "Evolutionary Applications",
+            "publisher": "Wiley",
+            "number": 2
+        },
+        {
+            "journal": "Journal of Molecular Evolution",
+            "publisher": "Springer",
+            "number": 1
+        },
+        {
+            "journal": "Journal of Physics A: Mathematical and Theoretical",
+            "publisher": "IOP Publishing",
+            "number": 1
+        },
+        {
+            "journal": "PLOS ONE",
+            "publisher": "Public Library of Science",
+            "number": 3
+        },
+        {
+            "journal": "Proceeding of the Royal Society B",
+            "publisher": "Royal Society",
+            "number": 1
+        },
+        {
+            "journal": "Scientific Reports ",
+            "publisher": "Nature",
+            "number": 1
+        }
+    ],
+    "schools": [
+        {
+            "name": "Ready for BioData Management, BioData.pt",
+            "link": "https://ready4biodatamanagement.biodata.pt/index.html",
+            "location": "Gulbenkian Science, Portugal",
+            "year": 2019
+        },
+        {
+            "name": "Física Biológica (10 hours)",
+            "location": "Federal University of Pernambuco, Brazil",
+            "year": 2015
+        },
+        {
+            "name": "Contour Dynamics and Integrable Systems (10 hours)",
+            "location": "Federal University of Pernambuco, Brazil",
+            "year": 2015
+        },
+        {
+            "name": "Escola de Astrofísica e Gravitação",
+            "link": "https://centra.tecnico.ulisboa.pt/EscolasdeVerao/eag6/",
+            "location": "Instituto Superior Técnico, Portugal",
+            "year": 2012
+        },
+        {
+            "name": "Summer School on Particle Physics",
+            "link": "https://indico.ictp.it/event/a10147/",
+            "location": "The Abdus Salam International Centre for Theoretical Physics (ICTP), Italy",
+            "year": 2011
         }
     ]
 }

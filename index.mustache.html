@@ -145,7 +145,7 @@
             {{/education}}
         </div>
 
-        <p class="display-4">Peer-reviewed publications</p>
+        <p class="display-4">Peer-reviewed publications <small>({{papers.length}})</small></p>
         <div class="accordion cv-list" id="papers">
             {{#papers}}
             <div class="accordion-item">
@@ -178,7 +178,7 @@
 
         <br><br>
 
-        <p class="display-4">Other publications</p>
+        <p class="display-4">Other publications <small>({{other-publications.length}})</small></p>
         <div class="accordion cv-list" id="otherpublications">
             {{#other-publications}}
             <div class="accordion-item">
@@ -211,10 +211,10 @@
 
         <br><br>
 
-        <p class="display-4">Conference participations and seminars</p>
+        <p class="display-4">Conference participations and seminars <small>({{conferences.length}})</small></p>
         <div class="container">
             {{#conferences}}
-            <div class="row">
+            <div class="row mb-4">
                 <div class="col-md-6 lead">
                     <p class="lead mb-0">{{name}}</p>
                     {{#location}}<p  class="mb-0">{{location}}</p>{{/location}}
@@ -227,10 +227,10 @@
 
         <br><br>
 
-        <p class="display-4">Student supervisions</p>
+        <p class="display-4">Student supervisions <small>({{supervisions.length}})</small></p>
         <div class="container">
             {{#supervisions}}
-            <div class="row">
+            <div class="row mb-4">
                 <div class="col-md-6 lead">
                     <p class="lead mb-0">{{title}}</p>
                     {{#location}}<p class="mb-0">{{location}}</p>{{/location}}
@@ -241,6 +241,42 @@
             </div>
             {{/supervisions}}
         </div>
+
+        <br><br>
+
+        <p class="display-4">Peer review for scientific journals</p>
+        <div class="container">
+            {{#peer-review}}
+            <div class="row mb-2">
+                <div class="col-md-5 lead">
+                    <p class="lead mb-0">{{journal}}</p>
+                </div>
+                <div class="col-md-3 lead text-end">({{publisher}})</div>
+            </div>
+            {{/peer-review}}
+        </div>
+
+        <br><br>
+
+        <p class="display-4">Schools and other courses <small>({{schools.length}})</small></p>
+        <div class="container">
+            {{#schools}}
+            <div class="row mb-4">
+                <div class="col-md-5 lead">
+                    {{#link}}
+                    <p class="lead mb-0"><a href="{{link}}">{{name}}</a></p>
+                    {{/link}}
+                    {{^link}}
+                    <p class="lead mb-0">{{name}}</p>
+                    {{/link}}
+                    <p class="lead mb-0">{{location}}</p>
+                </div>
+                <div class="col-md-3 lead text-end">{{year}}</div>
+            </div>
+            {{/schools}}
+        </div>
+
+        <br><br>
 
         <div class="row mx-0 px-0">
             <div class="col-sm-6 mx-0 px-0">
