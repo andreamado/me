@@ -1,6 +1,29 @@
 {
     "papers": [
         {
+            "id": "stun-2023",
+            "title": " STUN: forward-time Simulation on TUnable fitNess landscapes in recombining populations",
+            "authors": [
+                {
+                    "name": "<u>A Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "Li Juan"
+                },
+                {
+                    "name": "C Bank",
+                    "last": true
+                }
+            ],
+            "journal": "Bioinformatics Advances",
+            "year": 2023,
+            "doi": "10.1093/bioadv/vbad164",
+            "summary": "",
+            "figure": "",
+            "alt_figure": ""
+        },
+        {
             "id": "mec-2023",
             "title": "Rapid adaptation of recombining populations on tunable fitness landscapes",
             "authors": [
@@ -377,29 +400,6 @@
             "alt_figure": ""
         },
         {
-            "id": "stun-2023",
-            "title": "STUN: forward-time&nbsp;<strong>S</strong>imulation on&nbsp;<strong>TU</strong>nable fit<strong>N</strong>ess landscapes in recombining populations (submitted)",
-            "authors": [
-                {
-                    "name": "<u>A Amado</u>",
-                    "self": true
-                },
-                {
-                    "name": "Li Juan"
-                },
-                {
-                    "name": "C Bank",
-                    "last": true
-                }
-            ],
-            "journal": "",
-            "year": 2023,
-            "doi": "10.1101/2023.02.15.528681",
-            "summary": "",
-            "figure": "",
-            "alt_figure": ""
-        },
-        {
             "id": "unpredict-2023",
             "title": "Unpredictability of the fitness effects of AMR mutations across environments in Escherichia coli (in preparation)",
             "authors": [
@@ -627,6 +627,7 @@
         {"skill": "Python"},
         {"skill": "Rust"},
         {"skill": "C++"},
+        {"skill": "SQL"},
         {"skill": "data analysis"},
         {"skill": "model development"},
         {"skill": "software development"},
@@ -792,6 +793,11 @@
     ],
     "online-courses": [
         {
+            "name": "SQL for Data Science",
+            "year": 2023,
+            "website": "Coursera/University of California, Davis"
+        },
+        {
             "name": "Django 4 and Python Full-Stack Developer Masterclass",
             "year": 2023,
             "website": "Udemy"
@@ -804,12 +810,12 @@
         {
             "name": "Programming Languages",
             "year": 2013,
-            "website": "Coursera"
+            "website": "Coursera/University of Washington"
         },
         {
             "name": "Heterogeneous Parallel Programming",
             "year": 2013,
-            "website": "Coursera"
+            "website": "Coursera/University of Illinois at Urbana-Champaign"
         }
     ]
 }
