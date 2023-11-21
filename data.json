@@ -381,7 +381,7 @@
     "other-publications": [
         {
             "id": "ecological-tradeoffs-2023",
-            "title": "Ecological tradeoﬀs create complex dynamics and sustained diversity on dynamic eco-evolutionary ﬁtness landscapes (submitted)",
+            "title": "Ecological tradeoffs lead to complex evolutionary trajectories and sustained diversity on dynamic fitness landscapes (submitted)",
             "authors": [
                 {
                     "name": "<u>A Amado</u>",
@@ -394,14 +394,14 @@
             ],
             "journal": "",
             "year": 2023,
-            "doi": "",
+            "doi": "10.1101/2023.10.11.561986",
             "summary": "",
             "figure": "",
             "alt_figure": ""
         },
         {
             "id": "unpredict-2023",
-            "title": "Unpredictability of the fitness effects of AMR mutations across environments in Escherichia coli (in preparation)",
+            "title": "Unpredictability of the fitness effects of antimicrobial resistance mutations across environments in Escherichia coli (submitted)",
             "authors": [
                 {
                     "name": "A Hinz"
@@ -423,7 +423,7 @@
             ],
             "journal": "",
             "year": 2023,
-            "doi": "",
+            "doi": "10.1101/2023.10.25.563906",
             "summary": "",
             "figure": "",
             "alt_figure": ""
