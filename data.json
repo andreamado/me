@@ -19,7 +19,7 @@
             "journal": "Bioinformatics Advances",
             "year": 2023,
             "doi": "10.1093/bioadv/vbad164",
-            "summary": "",
+            "summary": "This paper introduces a software package that Li Juan, Claudia, and I initially developed for our internal usage and that grew to be its own independent software! It allows the user to run simulations of adaptive trajectories of populations over arbitrary fitness landscapes, with or without recombination. The program is open-source, comes with a detailed manual, and the code is fully documented. I wrote it in Rust, a really cool language!",
             "figure": "figs/bioadv-2023.png",
             "alt_figure": ""
         },
