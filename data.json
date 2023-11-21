@@ -604,7 +604,7 @@
         },
         {
             "institution": "Instituto Superior Técnico",
-            "institution_url": "https://gulbenkian.pt/ciencia/",
+            "institution_url": "https://tecnico.ulisboa.pt/en/",
             "lab": "Centro de Física Teórica de Partículas",
             "lab_url": "http://cftp.tecnico.ulisboa.pt/",
             "position": "Research fellow",
@@ -620,6 +620,22 @@
             ],
             "start": "04/2011",
             "end": "10/2011"
+        },
+        {
+            "institution": "Instituto Superior Técnico",
+            "institution_url": "https://tecnico.ulisboa.pt/en/",
+            "lab": "",
+            "lab_url": "",
+            "position": "Developer",
+            "description": "Maintaining a Java application to access remote controlled scientific experiments.",
+            "has_skills": true,
+            "skills": [
+                {"skill": "Java"},
+                {"skill": "software development"},
+                {"skill": "Linux"}
+            ],
+            "start": "01/2008",
+            "end": "09/2008"
         }
     ],
     "contact_id": "21a685ec-36cf-4b0e-81c8-a75c7426ab62",
