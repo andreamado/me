@@ -18,8 +18,11 @@
         <h1 class="light-font lh-0 m-0">And<span style="letter-spacing: -2px;">ré</span> Amado</h1>
         <p class="lead light-font mb-5">scientist | developer</p>
       </div>
+      <div class="col-auto text-end">
+        <a class="heavy-font" href="https://andreamado.github.io/me">go back</a>
+      </div>
     </div>
-    <h1 class="light-font">Peer-reviewed publications <small>({{papers.length}})</small></h1>
+    <h2 class="light-font">Peer-reviewed publications <small>({{papers.length}})</small></h2>
     <div class="accordion accordion-flush normal-font cv-list" id="papers">
         {{#papers}}
         <div class="accordion-item">
@@ -60,7 +63,7 @@
 
     <br><br>
 
-    <h1 class="light-font">Other publications <small>({{other-publications.length}})</small></h1>
+    <h2 class="light-font">Other publications <small>({{other-publications.length}})</small></h2>
     <div class="accordion normal-font cv-list" id="otherpublications">
         {{#other-publications}}
         <div class="accordion-item">
@@ -97,6 +100,28 @@
             </div>
         </div>
         {{/other-publications}}
+    </div>
+
+    <br><br>
+
+    <h2 class="light-font mb-3">Conference participations and seminars <small>({{conferences.length}})</small></h2>
+    <div class="normal-font cv-list">
+        {{#conferences}}
+        <div class="row mb-4 ms-2">
+            <div class="col-md-8">
+                <p class="mb-2 heavy-font">
+                    {{#link}}
+                    <a href="{{link}}">{{name}} {{#location}}({{location}}){{/location}}</a>
+                    {{/link}}
+                    {{^link}}
+                    {{name}} {{#location}}({{location}}){{/location}}
+                    {{/link}}
+                </p>
+                <p>{{title}}</p>
+            </div>
+            <div class="col-md-3 text-end">{{year}}</div>
+        </div>
+        {{/conferences}}
     </div>
 
   </div>
