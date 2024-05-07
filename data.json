@@ -1,0 +1,844 @@
+{
+    "papers": [
+            {
+              "id": "unpredict-2023",
+              "title": "Unpredictability of the fitness effects of antimicrobial resistance mutations across environments in Escherichia coli",
+              "authors": [
+                  {
+                      "name": "A&nbsp;Hinz"
+                  },
+                  {
+                      "name": "<u>A&nbsp;Amado</u>",
+                      "self": true
+                  },
+                  {
+                      "name": "R&nbsp;Kassen"
+                  },
+                  {
+                      "name": "C&nbsp;Bank"
+                  },
+                  {
+                      "name": "A&nbsp;Wong",
+                      "last": true
+                  }
+              ],
+              "journal": "Molecular Biology and Evolution",
+              "year": 2024,
+              "doi": "10.1101/2023.10.25.563906",
+              "summary": "",
+              "figure": "img/mbe-2024.png",
+              "alt_figure": ""
+          },
+          {
+            "id": "ecological-tradeoffs-2023",
+            "title": "Ecological tradeoffs lead to complex evolutionary trajectories and sustained diversity on dynamic fitness landscapes",
+            "authors": [
+                {
+                    "name": "<u>A&nbsp;Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "C&nbsp;Bank",
+                    "last": true
+                }
+            ],
+            "journal": "Journal of Physics A",
+            "year": 2024,
+            "doi": "10.1088/1751-8121/ad30d0",
+            "doienc": "10.1088/1751--8121/ad30d0",
+            "summary": "In this paper, Claudia and I explore an ecological fitness landscape model in which fitness depends dynamically on the frequencies of the different genotypes through competition for existing resources. The resource competition introduces ecology in the fitness landscape, leading to an eco-evolutionary fitness landscape. We show that this fitness landscape yields more diverse populations than the corresponding \"traditional\" non-ecological fitness landscape.",
+            "figure": "img/jphysa-2024.png",
+            "alt_figure": ""
+        },
+        {
+            "id": "stun-2023",
+            "title": " STUN: forward-time Simulation on TUnable fitNess landscapes in recombining populations",
+            "authors": [
+                {
+                    "name": "<u>A&nbsp;Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "Li&nbsp;Juan"
+                },
+                {
+                    "name": "C&nbsp;Bank",
+                    "last": true
+                }
+            ],
+            "journal": "Bioinformatics Advances",
+            "year": 2023,
+            "doi": "10.1093/bioadv/vbad164",
+            "summary": "This paper introduces a software package that Li Juan, Claudia, and I initially developed for our internal usage and that grew to be its own independent software! It allows the user to run simulations of adaptive trajectories of populations over arbitrary fitness landscapes, with or without recombination. The program is open-source, comes with a detailed manual, and the code is fully documented. I wrote it in Rust, a really cool language!",
+            "figure": "img/bioadv-2023.png",
+            "alt_figure": ""
+        },
+        {
+            "id": "mec-2023",
+            "title": "Rapid adaptation of recombining populations on tunable fitness landscapes",
+            "authors": [
+                {
+                    "name": "Li&nbsp;Juan"
+                },
+                {
+                    "name": "<u>A&nbsp;Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "C&nbsp;Bank",
+                    "last": true
+                }
+            ],
+            "journal": "Molecular Ecology",
+            "year": 2023,
+            "doi": "10.1111/mec.16900",
+            "summary": "",
+            "figure": "img/mec-2023.png",
+            "alt_figure": ""
+        },
+        {
+            "id": "rstb-2022",
+            "title": "Epistasis decreases with increasing antibiotic pressure but not temperature",
+            "authors": [
+                {
+                    "name": "AH&nbsp;Ghenu"
+                },
+                {
+                    "name": "<u>A&nbsp;Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "I&nbsp;Gordo"
+                },
+                {
+                    "name": "C&nbsp;Bank",
+                    "last": true
+                }
+            ],
+            "journal": "Philosophical Transactions of the Royal Society B",
+            "year": 2022,
+            "doi": "10.1098/rstb.2022.0058",
+            "summary": "",
+            "figure": "img/rstb-2022.png",
+            "alt_figure": ""
+        },
+        {
+            "id": "epjc-2020",
+            "title": "A&nbsp;<em>ϕ<sup>6</sup></em>&nbsp;soliton with a long-range tail",
+            "authors": [
+                {
+                    "name": "<u>A&nbsp;Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "A&nbsp;Mohammadi",
+                    "last": true
+                }
+            ],
+            "journal": "The European Physical Journal C",
+            "year": 2020,
+            "doi": "10.1140/epjc/s10052-020-8162-9",
+            "doienc": "10.1140/epjc/s10052--020--8162--9",
+            "summary": "In this work, Azadeh and I explore a new <em>ϕ<sup>6</sup></em> soliton with a long-range tail. We find the solitonic solution and its oscillation modes. Then we study the interaction of this soliton with scalar fields (considering two possible couplings) and a fermion field. Excitingly, we were able to obtain most results analytically!",
+            "figure": "img/epjc-2020.png",
+            "alt_figure": "equations"
+        },
+        {
+            "id": "evoeco-2019",
+            "title": "Ecological specialization under multidimensional trade-offs",
+            "authors": [
+                {
+                    "name": "<u>A&nbsp;Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "PRA&nbsp;Campos",
+                    "last": true
+                }
+            ],
+            "journal": "Evolutionary Ecology",
+            "year": 2019,
+            "doi": "10.1007/s10682-019-10013-4",
+            "doienc": "10.1007/s10682--019--10013--4",
+            "summary": "Organisms are expected to face trade-offs when trying to extract the most energy of a resource as swiftly as possible. While this is well-known, the effects that it has at the community level are not very well explored. We suppose a system with several resources whose rates of acquisition and processing are subject to this type of restrictions. Then, we study the consequences it implies to the diversity and dynamics of the microbial communities that depend on those resources. To parametrize these complex trade-offs, we draw inspiration from computer graphics and make use of the flexible Bézier surfaces!",
+            "figure": "img/evoeco-2019.png",
+            "alt_figure": ""
+        },
+        {
+            "id": "epjp-2019",
+            "title": "Interplay of sources of stochastic noise in a resource-based model",
+            "authors": [
+                {
+                    "name": "<u>A&nbsp;Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "JV&nbsp;Santana-Filho"
+                },
+                {
+                    "name": "PRA&nbsp;Campos"
+                },
+                {
+                    "name": "EP&nbsp;Raposo",
+                    "last": true
+                }
+            ],
+            "journal": "The European Physical Journal Plus",
+            "year": 2019,
+            "doi": "10.1140/epjp/i2019-12603-5",
+            "doienc": "10.1140/epjp/i2019--12603--5",
+            "summary": "We study a stochastic model in which agents acquire resources from their environment. The resource influx and death rate are subject to random fluctuations. We derive equilibrium distributions analytically for a single species. Later, we generalize the model to include an arbitrary number of species and resources and study the coexistence of species in this setting.",
+            "figure": "img/epjp-2019.png",
+            "alt_figure": ""
+        },
+        {
+            "id": "plrev-2018",
+            "title": "Agent-based models of collective intelligence",
+            "authors": [
+                {
+                    "name": "SM&nbsp;Reia"
+                },
+                {
+                    "name": "<u>A&nbsp;Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "JF&nbsp;Fontanari",
+                    "last": true
+                }
+            ],
+            "journal": "Physics of Life Reviews",
+            "year": 2019,
+            "doi": "10.1016/j.plrev.2018.10.004",
+            "summary": "",
+            "figure": "img/plrev-2019.png",
+            "alt_figure": ""
+        },
+        {
+            "id": "ecolmodel-2018",
+            "title": "The interplay of tradeoffs within the framework of a resource-based modelling",
+            "authors": [
+                {
+                    "name": "VM&nbsp;Oliveira"
+                },
+                {
+                    "name": "&nbsp;<u>A&nbsp;Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "PRA&nbsp;Campos",
+                    "last": true
+                }
+            ],
+            "journal": "Ecological Modelling",
+            "year": 2018,
+            "doi": "10.1016/j.ecolmodel.2018.06.026",
+            "summary": "",
+            "figure": "img/ecolmodel-2018.png",
+            "alt_figure": ""
+        },
+        {
+            "id": "evo-2018",
+            "title": "A theoretical approach to the size‐complexity rule",
+            "authors": [
+                {
+                    "name": "<u>A&nbsp;Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "C&nbsp;Batista"
+                },
+                {
+                    "name": "PRA&nbsp;Campos",
+                    "last": true
+                }
+            ],
+            "journal": "Evolution",
+            "year": 2018,
+            "doi": "10.1111/evo.13392",
+            "summary": "",
+            "figure": "img/evo-2018.png",
+            "alt_figure": ""
+        },
+        {
+            "id": "physa-2017",
+            "title": "A mechanistic model for the evolution of multicellularity",
+            "authors": [
+                {
+                    "name": "<u>A&nbsp;Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "C&nbsp;Batista"
+                },
+                {
+                    "name": "PRA&nbsp;Campos",
+                    "last": true
+                }
+            ],
+            "journal": "Physica A",
+            "year": 2017,
+            "doi": "10.1016/j.physa.2017.11.080",
+            "summary": "",
+            "figure": "img/physa-2017.png",
+            "alt_figure": ""
+        },
+        {
+            "id": "plb-2017",
+            "title": "Quantum corrections to the generalized Proca theory via a matter field",
+            "authors": [
+                {
+                    "name": "<u>A&nbsp;Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "Z&nbsp;Haghani"
+                },
+                {
+                    "name": "A&nbsp;Mohammadi"
+                },
+                {
+                    "name": "S&nbsp;Shahidi",
+                    "last": true
+                }
+            ],
+            "journal": "Physics Letters B",
+            "year": 2017,
+            "doi": "10.1016/j.physletb.2017.06.040",
+            "summary": "",
+            "figure": "img/plb-2017.png",
+            "alt_figure": ""
+        },
+        {
+            "id": "jstatmec-2017",
+            "title": "The influence of the composition of tradeoffs on the generation of differentiated cells",
+            "authors": [
+                {
+                    "name": "<u>A&nbsp;Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "PRA&nbsp;Campos",
+                    "last": true
+                }
+            ],
+            "journal": "Journal of Statistical Mechanics",
+            "year": 2017,
+            "doi": "10.1088/1742-5468/aa71d8",
+            "doienc": "10.1088/1742--5468/aa71d8",
+            "summary": "Trade-offs represent constraints that limit the capacity of organisms to optimize different traits simultaneously. Since trade-offs are widespread in nature, life has developed crafty ways to circumvent these restrictions. One of these ways is the division of labor, with different organisms, or different units within the same organism, performing distinct functions and then sharing the benefits of them all. This probably constitutes one of the leading forces behind the evolution of multicellularity and cell specialization. In most models, trade-offs are treated individually, though, while it is more realistic to consider them in complex networks of interacting functions. In this work, we propose a model where trade-offs are naturally incorporated in networks and study the consequences this has on the evolution of cell differentiation.",
+            "figure": "img/jstatmec-2017.png",
+            "alt_figure": ""
+        },
+        {
+            "id": "epjc-2017",
+            "title": "Coupled fermion–kink system in Jackiw–Rebbi model",
+            "authors": [
+                {
+                    "name": "<u>A&nbsp;Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "A&nbsp;Mohammadi",
+                    "last": true
+                }
+            ],
+            "journal": "The European Physical Journal C",
+            "year": 2017,
+            "doi": "10.1140/epjc/s10052-017-5044-x",
+            "doienc": "10.1140/epjc/s10052--017--5044--x",
+            "summary": "",
+            "figure": "img/epjc-2017.png",
+            "alt_figure": ""
+        },
+        {
+            "id": "rsos-2016",
+            "title": "Competing metabolic strategies in a multilevel selection model",
+            "authors": [
+                {
+                    "name": "<u>A&nbsp;Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "L&nbsp;Fernández"
+                },
+                {
+                    "name": "W&nbsp;Huang"
+                },
+                {
+                    "name": "FF&nbsp;Ferreira"
+                },
+                {
+                    "name": "PRA&nbsp;Campos",
+                    "last": true
+                }
+            ],
+            "journal": "Royal Society Open Science",
+            "year": 2016,
+            "doi": "10.1098/rsos.160544",
+            "summary": "",
+            "figure": "img/rsos-2016.jpg",
+            "alt_figure": ""
+        },
+        {
+            "id": "pre-2016",
+            "title": "Coexistence of competing metabolic pathways in well-mixed populations",
+            "authors": [
+                {
+                    "name": "L&nbsp;Fernández"
+                },
+                {
+                    "name": "<u>A&nbsp;Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "PRA&nbsp;Campos"
+                },
+                {
+                    "name": "FF&nbsp;Ferreira",
+                    "last": true
+                }
+            ],
+            "journal": "Physical Review E",
+            "year": 2016,
+            "doi": "10.1103/PhysRevE.93.052401",
+            "summary": "",
+            "figure": "img/pre-2016.png",
+            "alt_figure": ""
+        },
+        {
+            "id": "physa-2015",
+            "title": "Learning process in public goods games",
+            "authors": [
+                {
+                    "name": "<u>A&nbsp;Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "W&nbsp;Huang"
+                },
+                {
+                    "name": "PRA&nbsp;Campos"
+                },
+                {
+                    "name": "FF&nbsp;Ferreira",
+                    "last": true
+                }
+            ],
+            "journal": "Physica A",
+            "year": 2015,
+            "doi": "10.1016/j.physa.2015.02.077",
+            "summary": "",
+            "figure": "img/physa-2015.png",
+            "alt_figure": ""
+        }
+    ],
+    "other-publications": [
+        {
+            "id": "fluxtube-2013",
+            "title": "Flux tube widening in compact U(1) lattice gauge theory computed at T < Tc with the multilevel method and GPUs",
+            "authors": [
+                {
+                    "name": "<u>A&nbsp;Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "N&nbsp;Cardoso"
+                },
+                {
+                    "name": "P&nbsp;Bicudo",
+                    "last": true
+                }
+            ],
+            "journal": "",
+            "year": 2013,
+            "doi": "10.48550/arXiv.1309.3859",
+            "summary": "",
+            "figure": "img/fluxtube-2013.png",
+            "alt_figure": ""
+        },
+        {
+            "id": "actaphysb-2012",
+            "title": "Study of compact U(1) flux tubes in 3+1 dimensions in lattice gauge theory using GPU's",
+            "authors": [
+                {
+                    "name": "<u>A&nbsp;Amado</u>",
+                    "self": true
+                },
+                {
+                    "name": "N&nbsp;Cardoso"
+                },
+                {
+                    "name": "N&nbsp;Cardoso"
+                },
+                {
+                    "name": "P&nbsp;Bicudo",
+                    "last": true
+                }
+            ],
+            "journal": "Acta Physica Polonica B",
+            "year": 2012,
+            "doi": "10.5506/APhysPolBSupp.5.1129",
+            "summary": "",
+            "figure": "img/actaphysb-2012.png",
+            "alt_figure": ""
+        }
+    ],
+    "education": [
+        {
+            "institution": "Universidade Federal de Pernambuco",
+            "institution_url": "https://www.ufpe.br/",
+            "degree": "Ph.D. in Physics",
+            "year": 2018,
+            "thesis_link": "https://repositorio.ufpe.br/handle/123456789/29704",
+            "skills": [
+                {"skill": "mathematics"},
+                {"skill": "statistics"},
+                {"skill": "physics"},
+                {"skill": "evolution theory"},
+                {"skill": "model development"},
+                {"skill": "software development"},
+                {"skill": "Python"},
+                {"skill": "C++"},
+                {"skill": "LaTeX"},
+                {"skill": "Wolfram Mathematica"},
+                {"skill": "scientific writing"},
+                {"skill": "collaboration skills"},
+                {"skill": "Linux"}
+            ]
+        },
+        {
+            "institution": "Instituto Superior Técnico",
+            "institution_url": "https://tecnico.ulisboa.pt/en/",
+            "degree": "M.Sc. in Engineering Physics",
+            "year": 2012,
+            "thesis_link": "https://fenix.tecnico.ulisboa.pt/cursos/meft/dissertacao/2353642410246",
+            "skills": [
+                {"skill": "mathematics"},
+                {"skill": "statistics"},
+                {"skill": "physics"},
+                {"skill": "software development"},
+                {"skill": "C++"},
+                {"skill": "LaTeX"},
+                {"skill": "Wolfram Mathematica"},
+                {"skill": "scientific writing"},
+                {"skill": "collaboration skills"},
+                {"skill": "Linux"}
+            ]
+        }
+    ],
+    "jobs": [
+        {
+            "institution": "University of Bern",
+            "institution_url": "https://www.unibe.ch/index_eng.html",
+            "lab": "Theoretical Ecology and Evolution",
+            "lab_url": "https://banklab.github.io/",
+            "position": "Postdoctoral researcher",
+            "description": "Modeled biological systems; analyzed experimental data; supervised junior researchers; developed computational tools for modeling.",
+            "has_skills": true,
+            "skills": [
+                {"skill": "Python"},
+                {"skill": "Rust"},
+                {"skill": "LaTeX"},
+                {"skill": "data analysis"},
+                {"skill": "model development"},
+                {"skill": "software development"},
+                {"skill": "model fitting"},
+                {"skill": "biology"},
+                {"skill": "evolution theory"},
+                {"skill": "scientific writing"},
+                {"skill": "collaboration skills"},
+                {"skill": "MacOS"}
+            ],
+            "supervisor": "Dr Claudia Bank",
+            "start": "02/2021",
+            "end": "03/2023"
+        },
+        {
+            "institution": "Instituto Gulbenkian de Ciência",
+            "institution_url": "https://gulbenkian.pt/ciencia/",
+            "lab": "Evolutionary Dynamics lab",
+            "lab_url": "https://evoldynamics.org/",
+            "position": "Postdoctoral researcher",
+            "description": "Modeled biological systems; analyzed experimental data; supervised junior researchers; developed computational tools for modeling.",
+            "has_skills": true,
+            "skills": [
+                {"skill": "Python"},
+                {"skill": "Rust"},
+                {"skill": "Wolfram Mathematica"},
+                {"skill": "LaTeX"},
+                {"skill": "data analysis"},
+                {"skill": "model fitting"},
+                {"skill": "model development"},
+                {"skill": "software development"},
+                {"skill": "biology"},
+                {"skill": "evolution theory"},
+                {"skill": "scientific writing"},
+                {"skill": "collaboration skills"},
+                {"skill": "MacOS"}
+            ],
+            "supervisor": "Dr Claudia Bank",
+            "start": "05/2019",
+            "end": "01/2021"
+        },
+        {
+            "institution": "Universidade Federal de Pernambuco",
+            "institution_url": "https://www.ufpe.br/",
+            "lab": "Physics Department/Laboratório de Física Teórica e Computacional",
+            "lab_url": "https://www.ufpe.br/df",
+            "position": "Postdoctoral researcher",
+            "description": "Modeled biological systems; developed computational tools for modeling; taught physics courses to engineering students.",
+            "has_skills": true,
+            "skills": [
+                {"skill": "Python"},
+                {"skill": "C++"},
+                {"skill": "Wolfram Mathematica"},
+                {"skill": "LaTeX"},
+                {"skill": "data analysis"},
+                {"skill": "model fitting"},
+                {"skill": "model development"},
+                {"skill": "software development"},
+                {"skill": "evolution theory"},
+                {"skill": "physics"},
+                {"skill": "scientific writing"},
+                {"skill": "collaboration skills"},
+                {"skill": "Linux"}
+            ],
+            "supervisor": "Dr Ernesto Raposo",
+            "start": "04/2018",
+            "end": "03/2019"
+        },
+        {
+            "institution": "Instituto Superior Técnico",
+            "institution_url": "https://tecnico.ulisboa.pt/en/",
+            "lab": "Centro de Física Teórica de Partículas",
+            "lab_url": "http://cftp.tecnico.ulisboa.pt/",
+            "position": "Research fellow",
+            "description": "Developed a CUDA C++ code for high-energy physics simulations.",
+            "has_skills": true,
+            "skills": [
+                {"skill": "C++"},
+                {"skill": "CUDA C++"},
+                {"skill": "software development"},
+                {"skill": "high-performance computing"},
+                {"skill": "physics"},
+                {"skill": "Linux"}
+            ],
+            "start": "04/2011",
+            "end": "10/2011"
+        },
+        {
+            "institution": "Instituto Superior Técnico",
+            "institution_url": "https://tecnico.ulisboa.pt/en/",
+            "lab": "",
+            "lab_url": "",
+            "position": "Developer",
+            "description": "Maintained a Java application to access remote controlled scientific experiments.",
+            "has_skills": true,
+            "skills": [
+                {"skill": "Java"},
+                {"skill": "software development"},
+                {"skill": "Linux"}
+            ],
+            "start": "01/2008",
+            "end": "09/2008"
+        }
+    ],
+    "contact_id": "21a685ec-36cf-4b0e-81c8-a75c7426ab62",
+    "main_skills": [
+        {"skill": "Python"},
+        {"skill": "Rust"},
+        {"skill": "C++"},
+        {"skill": "SQL"},
+        {"skill": "git"},
+        {"skill": "data analysis"},
+        {"skill": "model development"},
+        {"skill": "software development"},
+        {"skill": "statistics"},
+        {"skill": "mathematics"},
+        {"skill": "physics"},
+        {"skill": "scientific communication"},
+        {"skill": "scientific writing"},
+        {"skill": "collaboration skills"},
+        {"skill": "MacOS"},
+        {"skill": "Linux"},
+        {"skill": "Windows"}
+    ],
+    "conferences": [
+        {
+            "name": "Congress of the European Society for Evolutionary Biology",
+            "link": "https://www.eseb2022.cz/",
+            "title": "Talk: Dynamic eco-evolutionary fitness landscapes display complex trajectories and sustained diversity",
+            "location": "Prague, Czech Republic",
+            "year": 2022
+        },
+        {
+            "name": "Bern Data Science Day",
+            "link": "https://www.dsl.unibe.ch/lab/bdsd/bdsd2022/",
+            "title": "Poster: Dynamic eco-evolutionary fitness landscapes display complex evolutionary trajectories and sustained diversity",
+            "location": "Bern, Switzerland",
+            "year": 2022
+        },
+        {
+            "name": "PREPARE meeting",
+            "title": "Talk: Modelling fitness landscapes across environments",
+            "location": "Gulbenkian Science, Portugal",
+            "year": 2019
+        },
+        {
+            "name": "Young Scientists Retreat 2019",
+            "link": "https://curie.fr/sites/default/files/medias/documents/2019-05/YSRFlyer2019_KMS_v2.pdf",
+            "title": "Poster: Modeling fitness landscapes across environments",
+            "location": "Gulbenkian Science and Institut Curie, Portugal",
+            "year": 2019
+        },
+        {
+            "name": "Postdoc Seminar",
+            "title": "Talk: Fitness costs of antimicrobial resistance in E. coli",
+            "location": "Gulbenkian Science, Portugal",
+            "year": 2019
+        },
+        {
+            "name": "From Molecular Basis to Predictability and Control of Evolution",
+            "link": "https://indico.fysik.su.se/event/6552/",
+            "title": "Participation",
+            "location": "Nordita, Stockholm, Sweden",
+            "year": 2019
+        },
+        {
+            "name": "IX Brazilian Meeting on Simulational Physics",
+            "link": "https://www.iip.ufrn.br/eventsdetail.php?inf===QTUVUe",
+            "title": "Poster: Evolution of multicellularity: a mechanistic model",
+            "location": "International Institute of Physics, Natal, Brazil",
+            "year": 2019
+        },
+        {
+            "name": "Encontro de Física 2016",
+            "link": "http://sbfisica.org.br/~fisica2016/",
+            "title": "Poster: Tradeoffs and the evolution of complexity",
+            "location": "Sociedade Brasileira de Física, Natal, Brazil",
+            "year": 2016
+        },
+        {
+            "name": "Models in Population Dynamics and Ecology 15",
+            "title": "Poster: Predictability in populations evolving under imitation",
+            "location": "Universidade Federal Fluminense, Nitéroi, Brazil",
+            "year": 2015
+        },
+        {
+            "name": "Excited QCD",
+            "link": "https://indico.cern.ch/event/153191/",
+            "title": "Talk: Study of compact U(1) flux tubes in 3+1 dimensions in lattice gauge theory using GPU's",
+            "location": "Peniche, Portugal",
+            "year": 2012
+        }
+    ],
+    "supervisions": [
+        {
+            "title": "The combination of a Rough Mt. Fuji fitness landscape and a consumer resource model leads to more coexisting genotypes than resources available (Msc project and thesis)",
+            "student": "Jérôme Stäheli (supervisor: Claudia Bank, co-supervisor: <u>André Amado</u>)",
+            "location": "University of Bern, Switzerland",
+            "year": 2023
+        },
+        {
+            "title": "Avaliação da qualidade de um modelo de fitness landscapes em múltiplos ambientes (BSc project and thesis)",
+            "student": "Inês Borges (supervisor: <u>André Amado</u>, co-supervisor: Claudia Bank)",
+            "location": "Universidade Nova de Lisboa, Portugal",
+            "year": 2020
+        }
+    ],
+    "peer-review": [
+        {
+            "journal": "Evolution",
+            "publisher": "Oxford University Press",
+            "number": 1
+        },
+        {
+            "journal": "Evolutionary Applications",
+            "publisher": "Wiley",
+            "number": 2
+        },
+        {
+            "journal": "Journal of Molecular Evolution",
+            "publisher": "Springer",
+            "number": 1
+        },
+        {
+            "journal": "Journal of Physics A: Mathematical and Theoretical",
+            "publisher": "IOP Publishing",
+            "number": 1
+        },
+        {
+            "journal": "PLOS ONE",
+            "publisher": "Public Library of Science",
+            "number": 3
+        },
+        {
+            "journal": "Proceeding of the Royal Society B",
+            "publisher": "Royal Society",
+            "number": 1
+        },
+        {
+            "journal": "Scientific Reports ",
+            "publisher": "Nature",
+            "number": 1
+        }
+    ],
+    "schools": [
+        {
+            "name": "Ready for BioData Management, BioData.pt",
+            "link": "https://ready4biodatamanagement.biodata.pt/index.html",
+            "location": "Gulbenkian Science, Portugal",
+            "year": 2019
+        },
+        {
+            "name": "Física Biológica (10 hours)",
+            "location": "Federal University of Pernambuco, Brazil",
+            "year": 2015
+        },
+        {
+            "name": "Contour Dynamics and Integrable Systems (10 hours)",
+            "location": "Federal University of Pernambuco, Brazil",
+            "year": 2015
+        },
+        {
+            "name": "Escola de Astrofísica e Gravitação",
+            "link": "https://centra.tecnico.ulisboa.pt/EscolasdeVerao/eag6/",
+            "location": "Instituto Superior Técnico, Portugal",
+            "year": 2012
+        },
+        {
+            "name": "Summer School on Particle Physics",
+            "link": "https://indico.ictp.it/event/a10147/",
+            "location": "The Abdus Salam International Centre for Theoretical Physics (ICTP), Italy",
+            "year": 2011
+        }
+    ],
+    "online-courses": [
+        {
+            "name": "SQL for Data Science",
+            "year": 2023,
+            "website": "Coursera/University of California, Davis"
+        },
+        {
+            "name": "Django 4 and Python Full-Stack Developer Masterclass",
+            "year": 2023,
+            "website": "Udemy"
+        },
+        {
+            "name": "Research Integrity: Concise (core course)",
+            "year": 2020,
+            "website": "Epigeum Online Course System, Oxford University Press"
+        },
+        {
+            "name": "Programming Languages",
+            "year": 2013,
+            "website": "Coursera/University of Washington"
+        },
+        {
+            "name": "Heterogeneous Parallel Programming",
+            "year": 2013,
+            "website": "Coursera/University of Illinois at Urbana-Champaign"
+        }
+    ]
+}

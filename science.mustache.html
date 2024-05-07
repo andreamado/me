@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>André Amado</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+  <div class="container ps-2 pt-5 pb-5">
+    <div class="row">
+      <div class="col">
+        <h1 class="light-font lh-0 m-0">And<span style="letter-spacing: -2px;">ré</span> Amado</h1>
+        <p class="lead light-font mb-5">scientist | developer</p>
+      </div>
+    </div>
+    <h1 class="light-font">Peer-reviewed publications <small>({{papers.length}})</small></h1>
+    <div class="accordion accordion-flush normal-font cv-list" id="papers">
+        {{#papers}}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="{{id}}">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-{{id}}" aria-expanded="false" aria-controls="collapse-{{id}}">
+                    <p class="m-0 p-0 g-0">{{{title}}} ({{#authors}}{{{name}}}{{^last}}, {{/last}}{{/authors}})</p>
+                </button>
+            </h2>
+            <div id="collapse-{{id}}" class="accordion-collapse collapse" aria-labelledby="{{id}}"
+                data-bs-parent="#papers">
+                <div class="accordion-body">
+                    <div class="container text-start">
+                        <p class="very-heavy-font">{{journal}} ({{year}}) <a href="https://doi.org/{{{doi}}}">
+                          {{#doienc}}
+                              <img src="https://img.shields.io/badge/DOI-{{doienc}}-blue?style=flat-square&logoColor=blue" alt="">
+                          {{/doienc}}
+                          {{^doienc}}
+                              <img src="https://img.shields.io/badge/DOI-{{doi}}-blue?style=flat-square&logoColor=blue" alt="">
+                          {{/doienc}}
+                        </a></p>
+                        <div class="row text-start">
+                            <div class="col-md-8 longer-text-font">{{{summary}}}</div>
+                            <div class="col-md-4">
+                                <div class="publication-summary-img">
+                                    <span class="faded faded-clip faded-all">
+                                      <img src="{{figure}}" alt="{{alt_figure}}" class="clip">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/papers}}
+    </div>
+
+    <br><br>
+
+    <h1 class="light-font">Other publications <small>({{other-publications.length}})</small></h1>
+    <div class="accordion normal-font cv-list" id="otherpublications">
+        {{#other-publications}}
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="{{id}}">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-{{id}}" aria-expanded="false" aria-controls="collapse-{{id}}">
+                    <p class="m-0 p-0 g-0">{{{title}}} ({{#authors}}{{{name}}}{{^last}}, {{/last}}{{/authors}})</p>
+                </button>
+            </h2>
+            <div id="collapse-{{id}}" class="accordion-collapse collapse" aria-labelledby="{{id}}"
+                data-bs-parent="#otherpublications">
+                <div class="accordion-body">
+                    <div class="container text-start">
+                        <p class="very-heavy-font">{{journal}} ({{year}}) <a href="https://doi.org/{{{doi}}}">
+                          {{#doienc}}
+                              <img src="https://img.shields.io/badge/DOI-{{doienc}}-blue?style=flat-square&logoColor=blue" alt="">
+                          {{/doienc}}
+                          {{^doienc}}
+                              <img src="https://img.shields.io/badge/DOI-{{doi}}-blue?style=flat-square&logoColor=blue" alt="">
+                          {{/doienc}}
+                        </a></p>
+                        <div class="row text-start">
+                            <div class="col-md-8">{{{summary}}}</div>
+                            <div class="col-md-4">
+                                <div class="publication-summary-img">
+                                    <span class="faded faded-clip faded-all">
+                                        <img src="{{figure}}" alt="{{alt_figure}}" width="100%">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/other-publications}}
+    </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
