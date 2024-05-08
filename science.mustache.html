@@ -108,7 +108,7 @@
     <div class="normal-font cv-list">
         {{#conferences}}
         <div class="row mb-4 ms-2">
-            <div class="col-md-8">
+            <div class="col-md-9">
                 <p class="mb-2 heavy-font">
                     {{#link}}
                     <a href="{{link}}">{{name}} {{#location}}({{location}}){{/location}}</a>
@@ -119,9 +119,59 @@
                 </p>
                 <p>{{title}}</p>
             </div>
-            <div class="col-md-3 text-end">{{year}}</div>
+            <div class="col-md-2 text-end">{{year}}</div>
         </div>
         {{/conferences}}
+    </div>
+
+    <br><br>
+
+    <h2 class="light-font mb-3">Student supervisions <small>({{supervisions.length}})</small></h2>
+    <div class="normal-font cv-list">
+        {{#supervisions}}
+        <div class="row mb-4">
+            <div class="col-md-9">
+                <p class="mb-0 heavy-font">{{title}}</p>
+                {{#location}}<p class="mb-2">{{location}}</p>{{/location}}
+                <p>{{{student}}}</p>
+            </div>
+            <div class="col-md-2 text-end">{{year}}</div>
+        </div>
+        {{/supervisions}}
+    </div>
+
+    <br><br>
+
+    <h2 class="light-font mb-3">Peer review for scientific journals</h2>
+    <div class="normal-font cv-list">
+        {{#peer-review}}
+        <div class="row mb-2">
+            <div class="col-md-8">
+                <p class="mb-0">{{journal}}</p>
+            </div>
+            <div class="col-md-3 text-end">({{publisher}})</div>
+        </div>
+        {{/peer-review}}
+    </div>
+
+    <br><br>
+
+    <h2 class="light-font mb-3">Schools and other courses <small>({{schools.length}})</small></h2>
+    <div class="normal-font cv-list">
+        {{#schools}}
+        <div class="row mb-4">
+            <div class="col-md-8">
+                {{#link}}
+                <p class="heavy-font mb-0"><a href="{{link}}">{{name}}</a></p>
+                {{/link}}
+                {{^link}}
+                <p class="heavy-font mb-0">{{name}}</p>
+                {{/link}}
+                <p class="mb-0">{{location}}</p>
+            </div>
+            <div class="col-md-3 text-end">{{year}}</div>
+        </div>
+        {{/schools}}
     </div>
 
   </div>
