@@ -12,181 +12,182 @@
   <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
-  <div class="container ps-2 pt-5 pb-5 hide-loading" id="main-page">
-    <div class="row">
-      <div class="col">
-        <h1 class="light-font lh-0 m-0">And<span style="letter-spacing: -2px;">ré</span> Amado</h1>
-        <p class="lead light-font mb-5">scientist | developer</p>
+  <div class="supra-container">
+    <div class="container ps-2 pt-5 pb-5 hide-loading" id="main-page">
+      <div class="row">
+        <div class="col">
+          <h1 class="light-font lh-0 m-0">And<span style="letter-spacing: -2px;">ré</span> Amado</h1>
+          <p class="lead light-font mb-5">scientist | developer</p>
+        </div>
+        <div class="col-auto text-end">
+          <a class="heavy-font" href="index.html">go back</a>
+        </div>
       </div>
-      <div class="col-auto text-end">
-        <a class="heavy-font" href="index.html">go back</a>
+      <h2 class="light-font">Peer-reviewed publications <small>({{papers.length}})</small></h2>
+      <div class="accordion accordion-flush normal-font cv-list" id="papers">
+          {{#papers}}
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="{{id}}">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse-{{id}}" aria-expanded="false" aria-controls="collapse-{{id}}">
+                      <p class="m-0 p-0 g-0">{{{title}}} ({{#authors}}{{{name}}}{{^last}}, {{/last}}{{/authors}})</p>
+                  </button>
+              </h2>
+              <div id="collapse-{{id}}" class="accordion-collapse collapse" aria-labelledby="{{id}}"
+                  data-bs-parent="#papers">
+                  <div class="accordion-body">
+                      <div class="container text-start">
+                          <p class="very-heavy-font">{{journal}} ({{year}}) <a href="https://doi.org/{{{doi}}}">
+                            {{#doienc}}
+                                <img src="https://img.shields.io/badge/DOI-{{doienc}}-blue?style=flat-square&logoColor=blue" alt="">
+                            {{/doienc}}
+                            {{^doienc}}
+                                <img src="https://img.shields.io/badge/DOI-{{doi}}-blue?style=flat-square&logoColor=blue" alt="">
+                            {{/doienc}}
+                          </a></p>
+                          <div class="row text-start">
+                              <div class="col-md-8 longer-text-font">{{{summary}}}</div>
+                              <div class="col-md-4">
+                                  <div class="publication-summary-img">
+                                      <span class="faded faded-clip faded-all">
+                                        <img src="{{figure}}" alt="{{alt_figure}}" class="clip">
+                                      </span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          {{/papers}}
       </div>
-    </div>
-    <h2 class="light-font">Peer-reviewed publications <small>({{papers.length}})</small></h2>
-    <div class="accordion accordion-flush normal-font cv-list" id="papers">
-        {{#papers}}
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="{{id}}">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapse-{{id}}" aria-expanded="false" aria-controls="collapse-{{id}}">
-                    <p class="m-0 p-0 g-0">{{{title}}} ({{#authors}}{{{name}}}{{^last}}, {{/last}}{{/authors}})</p>
-                </button>
-            </h2>
-            <div id="collapse-{{id}}" class="accordion-collapse collapse" aria-labelledby="{{id}}"
-                data-bs-parent="#papers">
-                <div class="accordion-body">
-                    <div class="container text-start">
-                        <p class="very-heavy-font">{{journal}} ({{year}}) <a href="https://doi.org/{{{doi}}}">
-                          {{#doienc}}
-                              <img src="https://img.shields.io/badge/DOI-{{doienc}}-blue?style=flat-square&logoColor=blue" alt="">
-                          {{/doienc}}
-                          {{^doienc}}
-                              <img src="https://img.shields.io/badge/DOI-{{doi}}-blue?style=flat-square&logoColor=blue" alt="">
-                          {{/doienc}}
-                        </a></p>
-                        <div class="row text-start">
-                            <div class="col-md-8 longer-text-font">{{{summary}}}</div>
-                            <div class="col-md-4">
-                                <div class="publication-summary-img">
-                                    <span class="faded faded-clip faded-all">
-                                      <img src="{{figure}}" alt="{{alt_figure}}" class="clip">
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {{/papers}}
-    </div>
-
-    <br><br>
-
-    <h2 class="light-font">Other publications <small>({{other-publications.length}})</small></h2>
-    <div class="accordion normal-font cv-list" id="otherpublications">
-        {{#other-publications}}
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="{{id}}">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapse-{{id}}" aria-expanded="false" aria-controls="collapse-{{id}}">
-                    <p class="m-0 p-0 g-0">{{{title}}} ({{#authors}}{{{name}}}{{^last}}, {{/last}}{{/authors}})</p>
-                </button>
-            </h2>
-            <div id="collapse-{{id}}" class="accordion-collapse collapse" aria-labelledby="{{id}}"
-                data-bs-parent="#otherpublications">
-                <div class="accordion-body">
-                    <div class="container text-start">
-                        <p class="very-heavy-font">{{journal}} ({{year}}) <a href="https://doi.org/{{{doi}}}">
-                          {{#doienc}}
-                              <img src="https://img.shields.io/badge/DOI-{{doienc}}-blue?style=flat-square&logoColor=blue" alt="">
-                          {{/doienc}}
-                          {{^doienc}}
-                              <img src="https://img.shields.io/badge/DOI-{{doi}}-blue?style=flat-square&logoColor=blue" alt="">
-                          {{/doienc}}
-                        </a></p>
-                        <div class="row text-start">
-                            <div class="col-md-8">{{{summary}}}</div>
-                            <div class="col-md-4">
-                                <div class="publication-summary-img">
-                                    <span class="faded faded-clip faded-all">
-                                        <img src="{{figure}}" alt="{{alt_figure}}" width="100%">
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {{/other-publications}}
-    </div>
-
-    <br><br>
-
-    <h2 class="light-font mb-3">Conference participations and seminars <small>({{conferences.length}})</small></h2>
-    <div class="normal-font cv-list">
-        {{#conferences}}
-        <div class="row mb-0 ms-2">
-            <div class="col-md-10">
-                <p class="mb-2 heavy-font">
-                    {{#link}}
-                    <a href="{{link}}">{{name}} {{#location}}<small>({{location}})</small>{{/location}}</a>
-                    {{/link}}
-                    {{^link}}
-                    {{name}} {{#location}}<small>({{location}})</small>{{/location}}
-                    {{/link}}
-                </p>
-            </div>
-            <div class="col-md-2 text-end">{{year}}</div>
-        </div>
-        <div class="row mb-4 ms-2">
-            <div class="col">
-                <p>{{title}}</p>
-            </div>
-        </div>
-        {{/conferences}}
-    </div>
-
-    <br><br>
-
-    <h2 class="light-font mb-3">Student supervisions <small>({{supervisions.length}})</small></h2>
-    <div class="normal-font cv-list">
-        {{#supervisions}}
-        <div class="row mb-0 ms-2">
-            <div class="col-md-10">
-                <p class="mb-0 heavy-font">{{title}}</p>
-                {{#location}}<p class="mb-2"><small>{{location}}</small></p>{{/location}}
-            </div>
-            <div class="col-md-2 text-end">{{year}}</div>
-        </div>
-        <div class="row mb-4 ms-2">
-            <div class="col">
-                <p>{{{student}}}</p>
-            </div>
-
-        </div>
-        {{/supervisions}}
-    </div>
-
-    <br><br>
-
-    <h2 class="light-font mb-3">Peer review for scientific journals</h2>
-    <div class="normal-font cv-list">
-        {{#peer-review}}
-        <div class="row mb-2 ms-2">
-            <div class="col-md-8">
-                <p class="mb-0">{{journal}}</p>
-            </div>
-            <div class="col-md-4 text-end"><small>({{publisher}})</small></div>
-        </div>
-        {{/peer-review}}
-    </div>
-
-    <br><br>
-
-    <h2 class="light-font mb-3">Schools and other courses <small>({{schools.length}})</small></h2>
-    <div class="normal-font cv-list">
-        {{#schools}}
-        <div class="row mb-0 ms-2">
-            <div class="col-md-9">
-                {{#link}}
-                <p class="heavy-font mb-0"><a href="{{link}}">{{name}}</a></p>
-                {{/link}}
-                {{^link}}
-                <p class="heavy-font mb-0">{{name}}</p>
-                {{/link}}
-            </div>
-            <div class="col-md-3 text-end">{{year}}</div>
-        </div>
-        <div class="row mb-4 ms-2">
-            <div class="col">
-                <p class="mb-0"><small>{{location}}</small></p>
-            </div>
-        </div>
-        {{/schools}}
-    </div>
-
+  
+      <br><br>
+  
+      <h2 class="light-font">Other publications <small>({{other-publications.length}})</small></h2>
+      <div class="accordion normal-font cv-list" id="otherpublications">
+          {{#other-publications}}
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="{{id}}">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse-{{id}}" aria-expanded="false" aria-controls="collapse-{{id}}">
+                      <p class="m-0 p-0 g-0">{{{title}}} ({{#authors}}{{{name}}}{{^last}}, {{/last}}{{/authors}})</p>
+                  </button>
+              </h2>
+              <div id="collapse-{{id}}" class="accordion-collapse collapse" aria-labelledby="{{id}}"
+                  data-bs-parent="#otherpublications">
+                  <div class="accordion-body">
+                      <div class="container text-start">
+                          <p class="very-heavy-font">{{journal}} ({{year}}) <a href="https://doi.org/{{{doi}}}">
+                            {{#doienc}}
+                                <img src="https://img.shields.io/badge/DOI-{{doienc}}-blue?style=flat-square&logoColor=blue" alt="">
+                            {{/doienc}}
+                            {{^doienc}}
+                                <img src="https://img.shields.io/badge/DOI-{{doi}}-blue?style=flat-square&logoColor=blue" alt="">
+                            {{/doienc}}
+                          </a></p>
+                          <div class="row text-start">
+                              <div class="col-md-8">{{{summary}}}</div>
+                              <div class="col-md-4">
+                                  <div class="publication-summary-img">
+                                      <span class="faded faded-clip faded-all">
+                                          <img src="{{figure}}" alt="{{alt_figure}}" width="100%">
+                                      </span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          {{/other-publications}}
+      </div>
+  
+      <br><br>
+  
+      <h2 class="light-font mb-3">Conference participations and seminars <small>({{conferences.length}})</small></h2>
+      <div class="normal-font cv-list">
+          {{#conferences}}
+          <div class="row mb-0 ms-2">
+              <div class="col-md-10">
+                  <p class="mb-2 heavy-font">
+                      {{#link}}
+                      <a href="{{link}}">{{name}} {{#location}}<small>({{location}})</small>{{/location}}</a>
+                      {{/link}}
+                      {{^link}}
+                      {{name}} {{#location}}<small>({{location}})</small>{{/location}}
+                      {{/link}}
+                  </p>
+              </div>
+              <div class="col-md-2 text-end">{{year}}</div>
+          </div>
+          <div class="row mb-4 ms-2">
+              <div class="col">
+                  <p>{{title}}</p>
+              </div>
+          </div>
+          {{/conferences}}
+      </div>
+  
+      <br><br>
+  
+      <h2 class="light-font mb-3">Student supervisions <small>({{supervisions.length}})</small></h2>
+      <div class="normal-font cv-list">
+          {{#supervisions}}
+          <div class="row mb-0 ms-2">
+              <div class="col-md-10">
+                  <p class="mb-0 heavy-font">{{title}}</p>
+                  {{#location}}<p class="mb-2"><small>{{location}}</small></p>{{/location}}
+              </div>
+              <div class="col-md-2 text-end">{{year}}</div>
+          </div>
+          <div class="row mb-4 ms-2">
+              <div class="col">
+                  <p>{{{student}}}</p>
+              </div>
+  
+          </div>
+          {{/supervisions}}
+      </div>
+  
+      <br><br>
+  
+      <h2 class="light-font mb-3">Peer review for scientific journals</h2>
+      <div class="normal-font cv-list">
+          {{#peer-review}}
+          <div class="row mb-2 ms-2">
+              <div class="col-md-8">
+                  <p class="mb-0">{{journal}}</p>
+              </div>
+              <div class="col-md-4 text-end"><small>({{publisher}})</small></div>
+          </div>
+          {{/peer-review}}
+      </div>
+  
+      <br><br>
+  
+      <h2 class="light-font mb-3">Schools and other courses <small>({{schools.length}})</small></h2>
+      <div class="normal-font cv-list">
+          {{#schools}}
+          <div class="row mb-0 ms-2">
+              <div class="col-md-9">
+                  {{#link}}
+                  <p class="heavy-font mb-0"><a href="{{link}}">{{name}}</a></p>
+                  {{/link}}
+                  {{^link}}
+                  <p class="heavy-font mb-0">{{name}}</p>
+                  {{/link}}
+              </div>
+              <div class="col-md-3 text-end">{{year}}</div>
+          </div>
+          <div class="row mb-4 ms-2">
+              <div class="col">
+                  <p class="mb-0"><small>{{location}}</small></p>
+              </div>
+          </div>
+          {{/schools}}
+      </div>
+    </div>  
   </div>
   <script>
     window.addEventListener("DOMContentLoaded", () => {

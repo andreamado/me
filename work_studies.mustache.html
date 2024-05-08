@@ -12,102 +12,105 @@
   <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
-  <div class="container ps-2 pt-5 pb-5 hide-loading" id="main-page">
-    <div class="row">
-      <div class="col">
-        <h1 class="light-font lh-0 m-0">And<span style="letter-spacing: -2px;">ré</span> Amado</h1>
-        <p class="lead light-font mb-5">scientist | developer</p>
+  <div class="supra-container">
+    <div class="container ps-2 pt-5 pb-5 hide-loading" id="main-page">
+      <div class="row">
+        <div class="col">
+          <h1 class="light-font lh-0 m-0">And<span style="letter-spacing: -2px;">ré</span> Amado</h1>
+          <p class="lead light-font mb-5">scientist | developer</p>
+        </div>
+        <div class="col-auto text-end">
+          <a class="heavy-font" href="index.html">go back</a>
+        </div>
       </div>
-      <div class="col-auto text-end">
-        <a class="heavy-font" href="index.html">go back</a>
-      </div>
-    </div>
-
-    <h2 class="light-font mb-3">Professional experience</h2>
-    <div class="normal-font cv-list">
+  
+      <h2 class="light-font mb-3">Professional experience</h2>
+      <div class="normal-font cv-list">
         {{#jobs}}
         <div class="row mb-0 ms-2">
-            <div class="col-md-9">
-                <p class="heavy-font mb-0">{{position}}</p>
-            </div>
-            <div class="col-md-3 text-end">{{start}} - {{end}}</div>
+          <div class="col-md-9">
+            <p class="heavy-font mb-0">{{position}}</p>
+          </div>
+          <div class="col-md-3 text-end">{{start}} - {{end}}</div>
         </div>
         <div class="row mb-4 ms-2">
           <div class="col">
-              <p class="mb-2">
-                  <small>
-                    <a href="{{institution_url}}">{{institution}}</a>
-                    {{#lab}}
-                        (<a href="{{lab_url}}">{{lab}}</a>)
-                    {{/lab}}
-                  </small>
-                </p>
-                <p class="longer-text-font mb-2">{{{description}}}</p>
-                {{#has_skills}}
-                <p style="line-height: 2.2; overflow: hidden; text-overflow: ellipsis;">
-                    <span class="heavy-font">Main skills </span>
-                    {{#skills}}
-                    <span class="border border-dark rounded-2 my-2 p-1" style="white-space:nowrap;"><small>{{skill}}</small></span>
-                    {{/skills}}
-                </p>
-                {{/has_skills}}
-            </div>
+            <p class="mb-2">
+              <small>
+                <a href="{{institution_url}}">{{institution}}</a>
+                {{#lab}}
+                    (<a href="{{lab_url}}">{{lab}}</a>)
+                {{/lab}}
+              </small>
+            </p>
+            <p class="longer-text-font mb-2">{{{description}}}</p>
+            {{#has_skills}}
+            <p style="line-height: 2.2; overflow: hidden; text-overflow: ellipsis;">
+              <span class="heavy-font">Main skills </span>
+              {{#skills}}
+              <span class="border border-dark rounded-2 my-2 p-1" style="white-space:nowrap;"><small>{{skill}}</small></span>
+              {{/skills}}
+            </p>
+            {{/has_skills}}
+          </div>
         </div>
         {{/jobs}}
-    </div>
-
-    <h2 class="light-font mb-3">Education</h2>
-    <div class="normal-font cv-list">
+      </div>
+  
+      <h2 class="light-font mb-3">Education</h2>
+      <div class="normal-font cv-list">
         {{#education}}
         <div class="row mb-0 ms-2">
-            <div class="col-md-10">
-                <p class="heavy-font mb-0">{{degree}} <small><a href="{{thesis_link}}">(thesis)</a></small></p>
-            </div>
-            <div class="col-md-2 text-end">{{year}}</div>
+          <div class="col-md-10">
+            <p class="heavy-font mb-0">{{degree}} <small><a href="{{thesis_link}}">(thesis)</a></small></p>
+          </div>
+          <div class="col-md-2 text-end">{{year}}</div>
         </div>
         <div class="row mb-4 ms-2">
           <div class="col">
-                <p class="mb-2"><small><a href="{{institution_url}}">{{institution}}</a></small></p>
-                <p style="line-height: 2.2; overflow: hidden; text-overflow: ellipsis;">
-                    <span class="heavy-font">Main skills </span>
-                    {{#skills}}
-                    <span class="border border-dark rounded-2 my-2 p-1" style="white-space:nowrap;"><small>{{skill}}</small></span>
-                    {{/skills}}
-                </p>    
-            </div>
+            <p class="mb-2"><small><a href="{{institution_url}}">{{institution}}</a></small></p>
+            <p style="line-height: 2.2; overflow: hidden; text-overflow: ellipsis;">
+              <span class="heavy-font">Main skills </span>
+              {{#skills}}
+              <span class="border border-dark rounded-2 my-2 p-1" style="white-space:nowrap;"><small>{{skill}}</small></span>
+              {{/skills}}
+            </p>    
+          </div>
         </div>
         {{/education}}
-    </div>
-
-    <h2 class="light-font mb-3">Online courses <small>({{online-courses.length}})</small></h2>
-    <div class="normal-font cv-list">
+      </div>
+  
+      <h2 class="light-font mb-3">Online courses <small>({{online-courses.length}})</small></h2>
+      <div class="normal-font cv-list">
         {{#online-courses}}
         <div class="row mb-0 ms-2">
-            <div class="col-md-9">
-                {{#link}}
-                <p class="heavy-font mb-0"><a href="{{link}}">{{name}}</a></p>
-                {{/link}}
-                {{^link}}
-                <p class="heavy-font mb-0">{{name}}</p>
-                {{/link}}
-            </div>
-            <div class="col-md-3 text-end">{{year}}</div>
+          <div class="col-md-9">
+            {{#link}}
+            <p class="heavy-font mb-0"><a href="{{link}}">{{name}}</a></p>
+            {{/link}}
+            {{^link}}
+            <p class="heavy-font mb-0">{{name}}</p>
+            {{/link}}
+          </div>
+          <div class="col-md-3 text-end">{{year}}</div>
         </div>
         <div class="row mb-4 ms-2">
-            <p class="mb-0"><small>{{website}}</small></p>
+          <p class="mb-0"><small>{{website}}</small></p>
         </div>
         {{/online-courses}}
+      </div>
     </div>
-    <script>
-      window.addEventListener("DOMContentLoaded", () => {
-        setTimeout(
-          () => {
-            document.getElementById('main-page').classList.remove('hide-loading');
-            document.getElementById('main-page').classList.add('finished-loading');
-          },
-          150
-        );
-      })
-    </script>
+  </div>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      setTimeout(
+        () => {
+          document.getElementById('main-page').classList.remove('hide-loading');
+          document.getElementById('main-page').classList.add('finished-loading');
+        },
+        150
+      );
+    })
+  </script>
 </body>
 </html>
