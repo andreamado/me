@@ -107,19 +107,23 @@
     <h2 class="light-font mb-3">Conference participations and seminars <small>({{conferences.length}})</small></h2>
     <div class="normal-font cv-list">
         {{#conferences}}
-        <div class="row mb-4 ms-2">
-            <div class="col-md-9">
+        <div class="row mb-0 ms-2">
+            <div class="col-md-10">
                 <p class="mb-2 heavy-font">
                     {{#link}}
-                    <a href="{{link}}">{{name}} {{#location}}({{location}}){{/location}}</a>
+                    <a href="{{link}}">{{name}} {{#location}}<small>({{location}})</small>{{/location}}</a>
                     {{/link}}
                     {{^link}}
-                    {{name}} {{#location}}({{location}}){{/location}}
+                    {{name}} {{#location}}<small>({{location}})</small>{{/location}}
                     {{/link}}
                 </p>
-                <p>{{title}}</p>
             </div>
             <div class="col-md-2 text-end">{{year}}</div>
+        </div>
+        <div class="row mb-4 ms-2">
+            <div class="col">
+                <p>{{title}}</p>
+            </div>
         </div>
         {{/conferences}}
     </div>
@@ -129,13 +133,18 @@
     <h2 class="light-font mb-3">Student supervisions <small>({{supervisions.length}})</small></h2>
     <div class="normal-font cv-list">
         {{#supervisions}}
-        <div class="row mb-4 ms-2">
-            <div class="col-md-9">
+        <div class="row mb-0 ms-2">
+            <div class="col-md-10">
                 <p class="mb-0 heavy-font">{{title}}</p>
-                {{#location}}<p class="mb-2">{{location}}</p>{{/location}}
-                <p>{{{student}}}</p>
+                {{#location}}<p class="mb-2"><small>{{location}}</small></p>{{/location}}
             </div>
             <div class="col-md-2 text-end">{{year}}</div>
+        </div>
+        <div class="row mb-4 ms-2">
+            <div class="col">
+                <p>{{{student}}}</p>
+            </div>
+
         </div>
         {{/supervisions}}
     </div>
@@ -149,7 +158,7 @@
             <div class="col-md-8">
                 <p class="mb-0">{{journal}}</p>
             </div>
-            <div class="col-md-3 text-end">({{publisher}})</div>
+            <div class="col-md-4 text-end"><small>({{publisher}})</small></div>
         </div>
         {{/peer-review}}
     </div>
@@ -159,17 +168,21 @@
     <h2 class="light-font mb-3">Schools and other courses <small>({{schools.length}})</small></h2>
     <div class="normal-font cv-list">
         {{#schools}}
-        <div class="row mb-4 ms-2">
-            <div class="col-md-8">
+        <div class="row mb-0 ms-2">
+            <div class="col-md-9">
                 {{#link}}
                 <p class="heavy-font mb-0"><a href="{{link}}">{{name}}</a></p>
                 {{/link}}
                 {{^link}}
                 <p class="heavy-font mb-0">{{name}}</p>
                 {{/link}}
-                <p class="mb-0">{{location}}</p>
             </div>
             <div class="col-md-3 text-end">{{year}}</div>
+        </div>
+        <div class="row mb-4 ms-2">
+            <div class="col">
+                <p class="mb-0"><small>{{location}}</small></p>
+            </div>
         </div>
         {{/schools}}
     </div>
