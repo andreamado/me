@@ -19,7 +19,7 @@
         <p class="lead light-font mb-5">scientist | developer</p>
       </div>
       <div class="col-auto text-end">
-        <a class="heavy-font" href="https://andreamado.github.io/me">go back</a>
+        <a class="heavy-font" href="index.html">go back</a>
       </div>
     </div>
     <h2 class="light-font">Peer-reviewed publications <small>({{papers.length}})</small></h2>
@@ -129,7 +129,7 @@
     <h2 class="light-font mb-3">Student supervisions <small>({{supervisions.length}})</small></h2>
     <div class="normal-font cv-list">
         {{#supervisions}}
-        <div class="row mb-4">
+        <div class="row mb-4 ms-2">
             <div class="col-md-9">
                 <p class="mb-0 heavy-font">{{title}}</p>
                 {{#location}}<p class="mb-2">{{location}}</p>{{/location}}
@@ -145,7 +145,7 @@
     <h2 class="light-font mb-3">Peer review for scientific journals</h2>
     <div class="normal-font cv-list">
         {{#peer-review}}
-        <div class="row mb-2">
+        <div class="row mb-2 ms-2">
             <div class="col-md-8">
                 <p class="mb-0">{{journal}}</p>
             </div>
@@ -159,7 +159,7 @@
     <h2 class="light-font mb-3">Schools and other courses <small>({{schools.length}})</small></h2>
     <div class="normal-font cv-list">
         {{#schools}}
-        <div class="row mb-4">
+        <div class="row mb-4 ms-2">
             <div class="col-md-8">
                 {{#link}}
                 <p class="heavy-font mb-0"><a href="{{link}}">{{name}}</a></p>
