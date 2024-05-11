@@ -29,7 +29,7 @@
         {{#jobs}}
         <div class="row mb-0 ms-2">
           <div class="col-md-9">
-            <p class="heavy-font mb-0">{{position}}</p>
+            <p class="heavy-font mb-0 experience-title">{{position}}</p>
           </div>
           <div class="col-md-3 text-end">{{start}} - {{end}}</div>
         </div>
@@ -37,9 +37,9 @@
           <div class="col">
             <p class="mb-2">
               <small>
-                <a href="{{institution_url}}">{{institution}}</a>
+                <a href="{{institution_url}}" target="_blank" rel="noopener noreferrer">{{institution}}</a>
                 {{#lab}}
-                    (<a href="{{lab_url}}">{{lab}}</a>)
+                    (<a href="{{lab_url}}" target="_blank" rel="noopener noreferrer">{{lab}}</a>)
                 {{/lab}}
               </small>
             </p>
@@ -62,13 +62,16 @@
         {{#education}}
         <div class="row mb-0 ms-2">
           <div class="col-md-10">
-            <p class="heavy-font mb-0">{{degree}} <small><a href="{{thesis_link}}">(thesis)</a></small></p>
+            <p class="heavy-font mb-0 experience-title">
+              {{degree}} 
+              <span style="font-size: 8pt;"><a class="marked-link" target="_blank" rel="noopener noreferrer" href="{{thesis_link}}">(thesis)</a></span>
+            </p>
           </div>
           <div class="col-md-2 text-end">{{year}}</div>
         </div>
         <div class="row mb-4 ms-2">
           <div class="col">
-            <p class="mb-2"><small><a href="{{institution_url}}">{{institution}}</a></small></p>
+            <p class="mb-2"><small><a href="{{institution_url}}" target="_blank" rel="noopener noreferrer">{{institution}}</a></small></p>
             <p style="line-height: 2.2; overflow: hidden; text-overflow: ellipsis;">
               <span class="heavy-font">Main skills </span>
               {{#skills}}
@@ -86,10 +89,10 @@
         <div class="row mb-0 ms-2">
           <div class="col-md-9">
             {{#link}}
-            <p class="heavy-font mb-0"><a href="{{link}}">{{name}}</a></p>
+            <p class="heavy-font mb-0 experience-title"><a href="{{link}}">{{name}}</a></p>
             {{/link}}
             {{^link}}
-            <p class="heavy-font mb-0">{{name}}</p>
+            <p class="heavy-font mb-0 experience-title">{{name}}</p>
             {{/link}}
           </div>
           <div class="col-md-3 text-end">{{year}}</div>
