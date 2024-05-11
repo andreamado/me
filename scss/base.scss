@@ -1,0 +1,316 @@
+// required to get $orange variable
+@import "bootstrap/scss/_functions"; 
+@import "bootstrap/scss/_variables";
+
+// $primary: rgb(54, 81, 28); // set the $primary variable
+// $primary-subtle: rgb(174, 196, 153); // set the $primary variable
+// $primary-subtle-05: rgb(174, 196, 153, 0.5); // set the $primary variable
+// $primary-08: rgb(54, 81, 28, 0.8); // set the $primary variable
+// $success: $primary;
+// // $success-bg-subtle: rgb(171, 166, 131);
+// $success-bg-subtle: $primary-subtle;
+// $success-bg-subtle-05: $primary-subtle-05;
+// // $success-bg-subtle-05: rgb(171, 166, 131, 0.5);
+// $success-border-subtle: $success;
+
+// $accordion-button-color:        $success;
+// $accordion-button-bg:           $success-bg-subtle-05;
+// $accordion-button-active-bg:    $success-bg-subtle-05;
+// $accordion-button-active-color: $success;
+// // $accordion-button-focus-box-shadow: 2px 2px 2px 2px rgb(54, 81, 28, 0.5);
+
+// $list-group-active-bg: $primary-subtle;
+// $list-group-active-border-color: $primary-subtle;
+
+// $badge-font-weight: $font-weight-normal;
+
+// $form-check-input-checked-color: $primary;
+// $form-check-input-checked-bg-color: $primary;
+// $form-check-input-checked-border-color: $primary;
+// $form-check-input-focus-border: $primary-08;
+
+$text-color: rgb(84, 76, 76);
+
+$primary: rgb(242, 222, 47);
+
+$accordion-bg: rgba(255, 255, 255, 0.05);
+$accordion-border-width: 0;
+$accordion-button-focus-box-shadow: none;
+$accordion-button-bg: rgba(0,0,0,0);
+$accordion-button-active-bg: rgba(255, 255, 255, 0.5);
+
+$form-floating-label-disabled-color: $text-color;
+$form-floating-label-opacity: 0.8;
+
+$input-focus-border-color: rgba(84, 76, 76, 0.5);
+$input-focus-box-shadow: none;
+
+$theme-colors: map-merge($theme-colors, (
+  "primary": $primary,
+));
+
+
+@mixin faded($offset, $blur-radius, $spread-radius)
+{
+    &.faded-left:after {
+        box-shadow: inset $offset 0 $blur-radius (-$spread-radius);
+    }
+
+    &.faded-right:after {
+        box-shadow: inset (-$offset) 0 $blur-radius (-$spread-radius);
+    }
+
+    &.faded-top:after {
+       box-shadow: inset 0 $offset $blur-radius (-$spread-radius);
+    }
+
+    &.faded-bottom:after {
+        box-shadow: inset 0 (-$offset) $blur-radius (-$spread-radius);
+    }
+
+    &.faded-left.faded-right:after {
+        box-shadow: inset $offset 0 $blur-radius (-$spread-radius), inset (-$offset) 0 $blur-radius (-$spread-radius);
+    }
+
+    &.faded-left.faded-top:after {
+        box-shadow: inset $offset ($offset) $blur-radius (-$spread-radius);
+    }
+
+    &.faded-right.faded-bottom:after {
+        box-shadow: inset (-$offset) (-$offset) $blur-radius (-$spread-radius);
+    }
+
+    &.faded-top.faded-right:after {
+        box-shadow: inset (-$offset) $offset $blur-radius (-$spread-radius);
+    }
+
+    &.faded-top.faded-bottom:after {
+       box-shadow: inset 0 $offset $blur-radius (-$spread-radius), inset 0 (-$offset) $blur-radius (-$spread-radius);
+    }
+
+    &.faded-left.faded-bottom:after {
+        box-shadow: inset $offset (-$offset) $blur-radius (-$spread-radius);
+    }
+
+    &.faded-top.faded-right.faded-bottom:after {
+        box-shadow: inset (-$offset*0.5) 0 $blur-radius $spread-radius;
+    }
+
+    &.faded-left.faded-right.faded-bottom:after {
+        box-shadow: inset 0 (-$offset*0.5) $blur-radius $spread-radius;
+    }
+
+    &.faded-left.faded-top.faded-bottom:after {
+        box-shadow: inset ($offset*0.5) 0 $blur-radius $spread-radius;
+    }
+
+    &.faded-left.faded-top.faded-right:after {
+        box-shadow: inset 0 ($offset*0.5) $blur-radius $spread-radius;
+    }
+
+    &.faded-all:after, &.faded-left.faded-top.faded-right.faded-bottom:after {
+        box-shadow: inset 0 0 $blur-radius $spread-radius;
+    }
+}
+
+
+$faded-offset: 40px !default;
+$faded-blur-radius: 40px !default;
+$faded-spread-radius: 16px !default;
+
+$faded-narrow-offset: 20px !default;
+$faded-narrow-blur-radius: 20px !default;
+$faded-narrow-spread-radius: 10px !default;
+
+$faded-wide-offset: 80px !default;
+$faded-wide-blur-radius: 80px !default;
+$faded-wide-spread-radius: 28px !default;
+
+$faded-clip-offset: 20px !default;
+$faded-clip-blur-radius: 20px !default;
+$faded-clip-spread-radius: 5px !default;
+
+.faded {
+    position: relative;
+    display: inline-block;
+    color: rgba(198,197,197,0.8);
+
+    &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-collapse: separate;
+    }
+
+    @include faded($faded-offset, $faded-blur-radius, $faded-spread-radius);
+
+    &.faded-narrow {
+        @include faded($faded-narrow-offset, $faded-narrow-blur-radius, $faded-narrow-spread-radius);
+    }
+
+    &.faded-wide {
+        @include faded($faded-wide-offset, $faded-wide-blur-radius, $faded-wide-spread-radius);
+    }
+
+    &.faded-clip {
+      @include faded($faded-clip-offset, $faded-clip-blur-radius, $faded-clip-spread-radius);
+  }
+}
+
+
+
+// set changes
+@import "bootstrap/scss/bootstrap";
+
+.light-font {
+  font-family: "Victor Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: $text-color;
+} 
+
+.heavy-font {
+  font-family: "Victor Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: $text-color;
+}
+
+.very-heavy-font {
+  font-family: "Victor Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  color: $text-color;
+}
+
+.normal-font {
+  font-family: "Victor Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: $text-color;
+} 
+
+.longer-text-font {
+  font-family: Arial, Helvetica, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: $text-color;
+}
+
+.image-subtitle {
+  font-family: "Victor Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 8pt;
+  color: $text-color;
+}
+
+.experience-title {
+  font-size: 14pt;
+}
+
+.narrow-space {
+  word-spacing: -0.15em;
+}
+
+.hide-loading {
+  opacity: 0;
+}
+
+.finished-loading {
+  opacity: 1;
+  transition: opacity 0.3s;
+  transition-timing-function: ease;
+}
+
+html {
+  height: 90%;
+  margin: 2.5% 4%;
+  background-color: #e2e2e2;
+}
+
+body {
+  background: rgb(230,230,230);
+  background: linear-gradient(90deg, rgba(230,230,230,1) 0%, rgba(198,197,197,1) 67%, rgba(176,164,164,1) 100%);
+  padding: 0.5cm;
+  height: 100%;
+  overflow: hidden;
+}
+
+.supra-container {
+  overflow-y:scroll;
+  overflow-x:hidden;
+  height:100%;
+}
+
+a {
+  color: #544c4c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7b7474;
+}
+
+.marked-link {
+  text-decoration: underline !important;
+  text-decoration-style: dotted !important;
+  text-decoration-line: underline !important;
+  text-underline-offset: 1pt !important;
+  text-decoration-thickness: 0.5pt !important;
+}
+
+*:has(>.show-on-hover):not(:hover)>.show-on-hover {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.arrow {
+  height: 15px;
+}
+
+.cv-list {
+  max-width: 20cm;
+}
+
+.clip {
+  width: 100%;
+}
+
+
+// Scroll bar
+// ::-webkit-scrollbar the scrollbar.
+// ::-webkit-scrollbar-button the buttons on the scrollbar (arrows pointing upwards and downwards).
+// ::-webkit-scrollbar-thumb the draggable scrolling handle.
+// ::-webkit-scrollbar-track the track (progress bar) of the scrollbar.
+// ::-webkit-scrollbar-track-piece the track (progress bar) NOT covered by the handle.
+// ::-webkit-scrollbar-corner the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet.
+// ::-webkit-resizer the draggable resizing handle that appears at the bottom corner of some elements.
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(84, 76, 76, 0.2);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(84, 76, 76, 0.5); 
+}
