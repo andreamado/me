@@ -558,7 +558,7 @@
             "institution": "Instituto Gulbenkian de Ciência",
             "institution_url": "https://gulbenkian.pt/ciencia/",
             "lab": "Evolutionary Dynamics lab",
-            "lab_url": "https://evoldynamics.org/",
+            "lab_url": "https://banklab.github.io/",
             "position": "Postdoctoral researcher",
             "description": "Modeled biological systems; analyzed experimental data; supervised junior researchers; developed computational tools for modeling.",
             "has_skills": true,
@@ -815,6 +815,11 @@
         }
     ],
     "online-courses": [
+        {
+            "name": "React Basics",
+            "year": 2024,
+            "website": "Coursera/Meta"
+        },
         {
             "name": "SQL for Data Science",
             "year": 2023,
