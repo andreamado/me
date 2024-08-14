@@ -233,16 +233,24 @@ $faded-clip-spread-radius: 5px !default;
 }
 
 html {
-  height: 90%;
-  margin: 2.5% 4%;
+  height: 100%;
+  width: 100%;
+  position: relative;
   background-color: #e2e2e2;
 }
 
 body {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
   background: rgb(230,230,230);
   background: linear-gradient(90deg, rgba(230,230,230,1) 0%, rgba(198,197,197,1) 67%, rgba(176,164,164,1) 100%);
   padding: 0.5cm;
-  height: 100%;
+  height: 90%;
+  width: 95%;
   overflow: hidden;
 }
 
@@ -285,6 +293,49 @@ a:hover {
 .clip {
   width: 100%;
 }
+
+.openable-title {
+  cursor: pointer;
+}
+
+
+.triangle{
+  fill: $text-color;
+  stroke: none;
+  stroke-width: 0;
+  transition: all 0.4s ease-in-out;
+  transform-origin: 10px 20px;
+}
+
+
+// .triangle-container{
+//   width: 40px;
+//   margin: auto;
+//   text-align: center;
+//   // border: 1px solid white;
+  
+//     &:hover, &:active{
+//       .triangle{
+//         transform: rotate(90deg); 
+//       }
+//     }
+  
+//   .triangle{
+//     fill: $text-color;
+//     stroke: none;
+//     stroke-width: 0;
+//     transition: all 0.4s ease-in-out;
+//     // transform: rotate(90deg);
+  
+//     @keyframes mymove {
+//       0%   {opacity:0}
+//       50%  {opacity:1}
+//       100% {opacity:0}
+//     }
+    
+//     transform-origin: 10px 20px;
+//   }
+// }
 
 
 // Scroll bar
